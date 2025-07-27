@@ -58,15 +58,22 @@ const ClassSelect = ({ type, placeholder, option }) => {
       </div>
 
       {dropdownVisible && (
-        <div className="absolute z-20 p-1 w-full bg-white border border-gray-300 rounded-md shadow-lg max-h-64 overflow-auto">
+        <div className="absolute cursor-pointer z-20 p-1 w-full bg-white border border-gray-300 rounded-md shadow-lg max-h-64 overflow-auto">
           <input
             type="text"
-            className="w-full p-1 border  border-gray-200 focus:outline-none"
+            className="w-full p-1 border border-gray-200 focus:outline-none"
             placeholder="Search class..."
             value={searchValue}
             onChange={handleSearchChange}
             autoFocus
           />
+
+          {/* Static Disabled Placeholder */}
+          <div className="p-1 text-white  bg-[#444]">
+            Please select class *
+          </div>
+
+          {/* Option Mapping */}
           {filteredOptions.length > 0 ? (
             filteredOptions.map((option, index) => (
               <div
@@ -82,6 +89,7 @@ const ClassSelect = ({ type, placeholder, option }) => {
           )}
         </div>
       )}
+
     </div>
   );
 };

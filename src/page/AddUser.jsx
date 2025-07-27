@@ -37,6 +37,7 @@ function AddUser() {
           <ClassSelect type={"Religion  *"} placeholder="Please select gender" option={gender} />
         </div>
         {/* 3rd row */}
+        
         <div className='grid grid-cols-4'>
           <DatePick lable={"Date Of Birth *"} />
           <Input

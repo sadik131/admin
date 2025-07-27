@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.custom-date-input::-webkit-calendar-picker-indicator {
+  opacity: 0;
+  /* display: none; */
+  cursor: pointer;
+}

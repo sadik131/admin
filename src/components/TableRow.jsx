@@ -11,9 +11,10 @@ const TableRow = ({ data, index, statusColors = {} }) => {
       {Object.entries(data).map(([key, value]) => (
         <td 
           key={key}
-          className={`px-6 py-4 whitespace-nowrap text-sm ${getCellStyle(key, value)}`}
+          className={`px-6 py-4`}
         >
-          {value}
+          
+          <span className={`whitespace-nowrap text-sm px-2 py-1 rounded-full ${getCellStyle(key, value)}`}>{value}</span>
         </td>
       ))}
       <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">***</td>
