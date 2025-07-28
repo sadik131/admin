@@ -3,12 +3,18 @@ import { FaCaretUp } from "react-icons/fa";
 
 
 
-const ClassSelect = ({ type, placeholder, option }) => {
-  const [selectedValue, setSelectedValue] = useState('');
+const ClassSelect = ({ type, value, option }) => {
+  const [selectedValue, setSelectedValue] = useState(value || '');
   const [searchValue, setSearchValue] = useState('');
   const [filteredOptions, setFilteredOptions] = useState(option);
   const [dropdownVisible, setDropdownVisible] = useState(false);
   const wrapperRef = useRef(null);
+
+  useEffect(() => {
+    if (value) {
+      setSelectedValue(value);
+    }
+  }, [value]);
 
   useEffect(() => {
     const handleClickOutside = (e) => {
@@ -49,7 +55,7 @@ const ClassSelect = ({ type, placeholder, option }) => {
       <label className="block mb-2 text-base font-normal text-[#646464]">{type}</label>
 
       <div
-        className="w-full px-4 py-1 text-[#b4b4b4] flex justify-between items-center bg-[#f0f1f3] rounded-md shadow-sm cursor-pointer "
+        className="w-full px-4 py-3 text-[#b4b4b4] flex justify-between items-center bg-[#f0f1f3] rounded-md shadow-sm cursor-pointer "
         onClick={handleDropdownClick}
       >
         {selectedValue || 'Please Select Class *'}

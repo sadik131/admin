@@ -17,7 +17,7 @@ function Sidebar() {
             {/* top logo */}
             <div className='flex justify-between items-center p-3 bg-gradient-to-r from-[#ff9d01] to-[#ffaa01]'>
                 {toggle && <div className=''>
-                    <h3 className='font-semibold text-xl text-white'>inventory-app</h3>
+                    <h3 className='font-semibold text-xl text-white uppercase'>Inventory</h3>
                 </div>
                 }
                 {toggle ?

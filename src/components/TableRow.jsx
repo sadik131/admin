@@ -1,11 +1,23 @@
-import { FaEdit } from "react-icons/fa";
+import { FaEdit, FaEye } from "react-icons/fa";
+import { MdDelete } from "react-icons/md";
+import { useNavigate } from "react-router-dom";
 
 const TableRow = ({ data, index, statusColors = {} }) => {
-  
-  const handleClick = (item) => {
-    console.log("Row clicked:", item);
-    
+  const navigate = useNavigate();
+
+  const handleClick = (id = 1) => {
+    navigate(`/add/1`);
   }
+
+  const handleView = (productCode) => {
+    console.log("View clicked:", productCode);
+    // navigate(`/view-product/${productCode}`);
+  };
+
+  const handleDelete = (productCode) => {
+    console.log("Delete clicked:", productCode);
+    // delete logic
+  };
 
   const getCellStyle = (key, value) => {
     if (key === 'status') {
@@ -31,7 +43,23 @@ const TableRow = ({ data, index, statusColors = {} }) => {
           )}
         </td>
       ))}
-      <td onClick={() => handleClick(data.productCode)} className="px-6 py-4 whitespace-nowrap text-sm text-gray-500"><FaEdit /></td>
+
+      <td className="text-center align-middle px-4 py-2 text-gray-500">
+        <div className="flex items-center justify-center gap-4">
+          <FaEdit
+            onClick={() => handleClick(data.productCode)}
+            className="text-base cursor-pointer hover:text-blue-500 transition duration-200"
+          />
+          <FaEye
+            onClick={() => handleClick(data.productCode)}
+            className="text-base cursor-pointer hover:text-green-500 transition duration-200"
+          />
+          <MdDelete
+            onClick={() => handleClick(data.productCode)}
+            className="text-base cursor-pointer hover:text-red-500 transition duration-200"
+          />
+        </div>
+      </td>
     </tr>
   );
 };
