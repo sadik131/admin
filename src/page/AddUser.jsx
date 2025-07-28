@@ -79,7 +79,7 @@ function AddUser() {
           </div>
         </div>
         {/* buttons */}
-        <div>
+        <div className='px-4'>
           <button className='bg-[#ffae01] text-white px-11 py-3 rounded-md mr-2'>Save</button>
           <button className='bg-[#092954] text-white px-11 py-3 rounded-md'>Reset</button>
         </div>
