@@ -10,8 +10,7 @@ const TableRow = ({ data, index, statusColors = {} }) => {
   }
 
   const handleView = (productCode) => {
-    console.log("View clicked:", productCode);
-    // navigate(`/view-product/${productCode}`);
+     navigate(`/details`);
   };
 
   const handleDelete = (productCode) => {
@@ -51,7 +50,7 @@ const TableRow = ({ data, index, statusColors = {} }) => {
             className="text-base cursor-pointer hover:text-blue-500 transition duration-200"
           />
           <FaEye
-            onClick={() => handleClick(data.productCode)}
+            onClick={() => handleView(data.productCode)}
             className="text-base cursor-pointer hover:text-green-500 transition duration-200"
           />
           <MdDelete

@@ -7,6 +7,7 @@ import { Route, Routes } from 'react-router-dom';
 import Dashboard from './page/Dashboard.jsx';
 import AddProduct from './page/AddProduct.jsx';
 import AllProduct from './page/AllProduct.jsx';
+import Details from './page/Details.jsx';
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
             <Route path="/" element={<Dashboard />} />
             <Route path="/add" element={<AddProduct />} />
             <Route path="/add/:productCode" element={<AddProduct />} />
+            <Route path="/details" element={<Details />} />
             <Route path="/all" element={<AllProduct />} />
           </Routes>
         </div>
