@@ -16,8 +16,8 @@ function Sidebar() {
         <div className={`${toggle ? "w-1/6" : "w-10"} h-screen bg-[#042954] transition-all duration-300 ease-in-out`} >
             {/* top logo */}
             <div className='flex justify-between items-center p-3 bg-gradient-to-r from-[#ff9d01] to-[#ffaa01]'>
-                {toggle && <div className='h-12 w-40'>
-                    <img src={logo} alt="" className='h-full w-full' />
+                {toggle && <div className=''>
+                    <h3 className='font-semibold text-xl text-white'>inventory-app</h3>
                 </div>
                 }
                 {toggle ?
@@ -50,9 +50,9 @@ function Sidebar() {
 
                 {/* Sub Menu Items */}
                 {toggle && showSubmenu && (
-                    <div className="flex flex-col ml-10 gap-1 text-sm w-full">
-                        <Link to={"/add"} className="w-full block py-1 cursor-pointer hover:text-yellow-400">Add Product</Link>
-                        <Link to={"/all"} className="w-full block py-1 cursor-pointer hover:text-yellow-400">All Product</Link>
+                    <div className="flex flex-col gap-1 text-sm w-full">
+                        <Link to={"/add"} className="py-2  w-full pl-[60px] items-center pr-5 inline-flex cursor-pointer hover:text-yellow-400 "><FaAngleRight className='mr-1'/> Add Product</Link>
+                        <Link to={"/all"} className="py-2  w-full pl-[60px] items-center pr-5 inline-flex cursor-pointer hover:text-yellow-400 "><FaAngleRight className='mr-1'/> All Product</Link>
                     </div>
                 )}
             </ div>
