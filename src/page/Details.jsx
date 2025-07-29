@@ -1,76 +1,3 @@
-// import React from 'react';
-
-// function Details() {
-//   const product = {
-   
-//   };
-
-//   return (
-//     <div className="max-w-6xl mx-auto p-4 md:p-8 bg-gray-50 min-h-screen">
-//       <div className="bg-white rounded-xl shadow-lg overflow-hidden">
-//         <div className="md:flex">
-//           {/* Product Image */}
-//           <div className="md:w-1/2 p-6 flex items-center justify-center bg-gray-100">
-//             <img 
-//               src={product.image} 
-//               alt={product.productName} 
-//               className="max-h-96 object-contain rounded-lg"
-//             />
-//           </div>
-          
-//           {/* Product Details */}
-//           <div className="md:w-1/2 p-6 md:p-8">
-//             <div className="flex justify-between items-start">
-//               <div>
-//                 <h1 className="text-2xl md:text-3xl font-bold text-gray-800 mb-2">{product.productName}</h1>
-//                 <div className="flex items-center mb-4">
-//                   <span className="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">
-//                     {product.category}
-//                   </span>
-//                   <span className={`ml-2 text-xs font-semibold px-2.5 py-0.5 rounded ${
-//                     product.status === 'Available' ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800'
-//                   }`}>
-//                     {product.status}
-//                   </span>
-//                 </div>
-//               </div>
-//               <span className="text-sm text-gray-500">Published: {product.publishDate}</span>
-//             </div>
-            
-//             <div className="mb-6">
-//               <div className="flex items-center">
-//                 <span className="text-2xl font-bold text-gray-900">${product.discountPrice}</span>
-//                 <span className="ml-2 text-lg text-gray-500 line-through">${product.price}</span>
-//                 {product.discountPrice && (
-//                   <span className="ml-2 px-2 py-1 text-xs font-bold bg-red-100 text-red-800 rounded">
-//                     {Math.round((1 - product.discountPrice/product.price) * 100)}% OFF
-//                   </span>
-//                 )}
-//               </div>
-//               <p className="text-sm text-gray-500 mt-1">In stock: {product.quantity} {product.unit}</p>
-//             </div>
-            
-//             <div className="mb-8">
-//               <h3 className="text-xl font-bold text-gray-900">Description</h3>
-//               <p className="mt-2 text-gray-600">
-//                 {/* {product.description}
-//                  */}
-//                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla distinctio, incidunt animi in laboriosam consectetur necessitatibus quasi veniam odit autem. Et molestiae quo qui iusto.
-//               </p>
-//             </div>
-            
-//           </div>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// }
-
-// export default Details;
-
-
-
-
 import React from "react";
 
 const ProductDetails = () => {
@@ -104,7 +31,7 @@ const ProductDetails = () => {
   publishDate: "2025-07-28",
 };
   return (
-    <div className="max-w-4xl mx-auto p-6 bg-white shadow-lg rounded-md">
+    <div className=" mx-auto p-6 bg-white shadow-lg rounded-md">
       <h2 className="text-2xl font-bold mb-4 text-center">Product Details</h2>
 
       <div className="flex flex-col md:flex-row gap-6">
