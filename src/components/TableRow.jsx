@@ -14,7 +14,7 @@ const TableRow = ({ data, index, statusColors = {} }) => {
   };
 
   const handleDelete = (productCode) => {
-    console.log("Delete clicked:", productCode);
+    alert("Delete product");
     // delete logic
   };
 
@@ -42,7 +42,7 @@ const TableRow = ({ data, index, statusColors = {} }) => {
           )}
         </td>
       ))}
-
+      {/* fixed in the last */}
       <td className="text-center align-middle px-4 py-2 text-gray-500">
         <div className="flex items-center justify-center gap-4">
           <FaEdit
@@ -54,7 +54,7 @@ const TableRow = ({ data, index, statusColors = {} }) => {
             className="text-base cursor-pointer hover:text-green-500 transition duration-200"
           />
           <MdDelete
-            onClick={() => handleClick(data.productCode)}
+            onClick={() => handleDelete(data.productCode)}
             className="text-base cursor-pointer hover:text-red-500 transition duration-200"
           />
         </div>

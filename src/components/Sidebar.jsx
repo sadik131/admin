@@ -13,7 +13,7 @@ function Sidebar() {
 
 
     return (
-        <div className={`${toggle ? "w-1/6" : "w-10"} h-screen bg-[#042954] transition-all duration-300 ease-in-out`} >
+        <div className={`${toggle ? "w-1/6" : "w-10"} h-svh bg-[#042954] transition-all duration-300 ease-in-out`} >
             {/* top logo */}
             <div className='flex justify-between items-center p-3 bg-gradient-to-r from-[#ff9d01] to-[#ffaa01]'>
                 {toggle && <div className=''>

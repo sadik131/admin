@@ -1,116 +1,251 @@
-import React, { useEffect } from 'react'
-import Input from '../components/Input'
-import ClassSelect from '../components/ClassSelect'
-import DatePicker from 'react-datepicker'
-import DatePicke from '../components/DatePick'
-import { brand, category, classOptions, gender, quantity, role, unit } from '../option'
-import { useParams } from 'react-router-dom'
+import React, { useEffect, useState } from "react";
+import Input from "../components/Input";
+import DatePicke from "../components/DatePick";
+import ClassSelect from "../components/ClassSelect";
+import { brand, category, productStatus } from "../option";
+import { useParams } from "react-router-dom";
 
-function AddProduct() {
-  const [Product, setProduct] = React.useState({
-    productCode: '',
+const ProductForm = () => {
+  const [Product, setProduct] = useState({
+    image: '',
     productName: '',
-    category: '',
+    sku: '',
+    category_type: '',
     brand: '',
-    price: '',
-    discountPrice: '',
+    model_number: '',
+    serial_number: '',
     quantity: '',
-    unit: '',
-    description: '',
+    reorder_level: '',
+    warehouse_location: '',
+    purchase_date: '',
+    purchase_price: '',
+    supplier_name: '',
+    supplier_contact: '',
+    purchase_receipt: '',
+    warranty_period: '',
+    warranty_start_date: '',
+    warranty_end_date: '',
+    warranty_terms: '',
+    warranty_document: '',
+    assigned_to: '',
     status: '',
-    publishDate: new Date(),
+    usage_status: '',
+    notes: '',
+    publishDate: '',
   });
 
-  const { productCode } = useParams()
+  const { productCode } = useParams();
 
   useEffect(() => {
     if (productCode) {
-      // Fetch product data based on productCode
       const fetchedProduct = {
-        productCode: 'PRD001',
-        productName: 'Wireless Headphones',
-        category: 'Electronics',
-        brand: 'Brand A',
-        price: '99.99',
-        discountPrice: '79.99',
-        quantity: '25',
-        unit: 'pcs',
-        description: 'Noise cancelling over-ear headphones with 30-hour battery life.',
-        status: 'Available',
-        publishDate: new Date('2025-07-28'),
+        image: "https://images.unsplash.com/photo-1541643600914-78b084683601?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D",
+        productName: "Gaming Laptop",
+        sku: "GL-RTX4060",
+        category_type: "Computers",
+        brand: "Xenon",
+        model_number: "XEN-GL4060",
+        serial_number: "SN-GL456321",
+        quantity: 10,
+        reorder_level: 5,
+        warehouse_location: "C3-Bay-1",
+        purchase_date: "2025-03-05",
+        purchase_price: 950.00,
+        supplier_name: "GameGear Supplies",
+        supplier_contact: "01555667788",
+        purchase_receipt: "/receipts/gaming-laptop.pdf",
+        warranty_period: "18 months",
+        warranty_start_date: "2025-03-05",
+        warranty_end_date: "2026-09-04",
+        warranty_terms: "Covers GPU and motherboard only.",
+        warranty_document: "/warranty/gl.pdf",
+        assigned_to: "Graphics Department",
+        status: "inactive",
+        usage_status: "under_repair",
+        notes: "Overheating issue reported; sent for inspection.",
+        publishDate: "2025-07-20"
       };
+
       setProduct(fetchedProduct);
     }
   }, [productCode]);
 
+
+
   return (
-    <form className="w-full h-full bg-white p-4">
-      <div className='mb-3'>
-        <h1 className="text-xl font-semibold mb-4">{Product ? "Update product":"Add new Product"}</h1>
-      </div>
-      {/* 1st row */}
-      <div className='grid grid-cols-3'>
-        <Input
-          value={Product.productName}
-          bgColor={"bg-[#f0f1f3]"}
-          lable="Product Name *"
-          type="text"
-        />
-        {/* category, brand */}
-        <Input
-          bgColor={"bg-[#f0f1f3]"}
-          lable="SKU *"
-          value={"PRD001"}
-          type="text"
-        />
-        <ClassSelect type={"Category Type *"} placeholder="Please select" value={Product.category} option={category} />
-      </div>
-      {/* 2nd row */}
-      <div className='grid grid-cols-3'>
-        <Input
-          bgColor={"bg-[#f0f1f3]"}
-          value={Product.price}
-          lable="Price "
-          type="text"
-        />
-        <Input
-          bgColor={"bg-[#f0f1f3]"}
-          lable="Discount Price"
-          value={Product.discountPrice}
-          type="text"
-        />
-        <ClassSelect value={Product.quantity} type={"Quantity  *"} placeholder="Please select gender" option={quantity} />
-      </div>
-      {/* 3rd row */}
+    <div className="p-6">
+      <h1 className="text-xl font-semibold mb-4">{Product ? "Update product" : "Add new Product"}</h1>
 
-      <div className='grid grid-cols-3'>
-        <ClassSelect value={Product.unit} type={"Unit  *"} placeholder="Please select gender" option={unit} />
-        <ClassSelect value={Product.status} type={"Stutus *"} placeholder="Please select gender" option={gender} />
-        <DatePicke value={Product.publishDate} lable={"Publish Date"} />
-      </div>
-      {/* 4th row */}
-      <div className='grid grid-cols-2 px-4 mb-6'>
-        <div>
-          <label className="block mb-2 text-base font-normal text-[#646464]">Description</label>
-          <textarea value={Product.description} name="" id="" className='h-20 bg-[#f0f1f3] w-full px-4 py-1 rounded-md focus:outline-none'></textarea>
-        </div>
-
-        <div className=' w-full px-4 mb-6'>
-          <label className="block mb-2 text-base font-normal text-[#646464]">Upload Product Image</label>
-          <input
-            type="file"
-            className={` w-full  py-2 rounded-md focus:outline-none`}
+      {/* Basic Info */}
+      <div className="mb-8">
+        <h3 className="text-lg pl-4 font-semibold text-gray-700 mb-4">Basic Info</h3>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <Input
+            value={Product.productName}
+            bgColor={"bg-[#f0f1f3]"}
+            lable="Product Name *"
+            type="text"
+          />
+          <Input
+            value={Product.sku}
+            bgColor={"bg-[#f0f1f3]"}
+            lable="SKU *"
+            type="text"
+          />
+          <ClassSelect value={Product.category_type} type={"Category Type  *"} placeholder="Please select Category" option={category} />
+          <ClassSelect type={"Brand Type  *"} value={Product.brand} placeholder="Please select Brand" option={brand} />
+          <Input
+            value={Product.model_number}
+            bgColor={"bg-[#f0f1f3]"}
+            lable="Model Number"
+            type="text"
+          />
+          <Input
+            value={Product.serial_number}
+            bgColor={"bg-[#f0f1f3]"}
+            lable="Serial Number"
+            type="text"
           />
         </div>
       </div>
 
-      {/* buttons */}
-      <div className='px-4'>
-        <button className='bg-[#ffae01] text-white px-11 py-3 rounded-md mr-2'>Save</button>
-        <button className='bg-[#092954] text-white px-11 py-3 rounded-md'>Reset</button>
+      {/* Stock Info */}
+      <div className="mb-8">
+        <h3 className="text-lg pl-4 font-semibold text-gray-700 mb-4">Stock Info</h3>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <Input
+            bgColor={"bg-[#f0f1f3]"}
+            lable="Quantity *"
+            value={Product.quantity}
+            type="number"
+          />
+          <Input
+            bgColor={"bg-[#f0f1f3]"}
+            lable="Reorder Level"
+            value={Product.reorder_level}
+            type="number"
+          />
+          <Input
+            bgColor={"bg-[#f0f1f3]"}
+            lable="Warehouse Location"
+            value={Product.warehouse_location}
+            type="text"
+          />
+        </div>
       </div>
-    </form>
-  )
-}
 
-export default AddProduct
+      {/* Purchase Info */}
+      <div className="mb-8">
+        <h3 className="text-lg pl-4 font-semibold text-gray-700 mb-4">Purchase Info</h3>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <DatePicke
+            value={Product.publishDate}
+            lable={"Purchase Date"} />
+          <Input
+            bgColor={"bg-[#f0f1f3]"}
+            lable="purchase_price"
+            value={Product.purchase_price}
+            type="number"
+          />
+          <Input
+            bgColor={"bg-[#f0f1f3]"}
+            lable="supplier_name"
+            value={Product.supplier_name}
+            type="text"
+          />
+          <Input
+            bgColor={"bg-[#f0f1f3]"}
+            lable="supplier_contact	"
+            value={Product.supplier_contact}
+            type="text"
+          />
+          <Input
+            bgColor={"bg-[transparent]"}
+            lable="purchase_receipt	"
+            // value={Product.purchase_receipt}
+            type="file"
+          />
+
+        </div>
+      </div>
+
+      {/* Warranty Info */}
+      <div className="mb-8">
+        <h3 className="text-lg pl-4 font-semibold text-gray-700 mb-4">Warranty Info</h3>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <Input
+            bgColor={"bg-[#f0f1f3]"}
+            lable="warranty_period"
+            value={Product.warranty_period}
+            type="text"
+          />
+          <DatePicke
+            value={Product.warranty_start_date}
+            lable={"warranty_start_date"} />
+          <DatePicke
+            value={Product.warranty_end_date}
+            lable={"warranty_end_date"} />
+
+          <Input
+            bgColor={"bg-[#f0f1f3]"}
+            value={Product.warranty_terms}
+            lable="warranty_terms	"
+            type="text"
+          />
+          <Input
+            bgColor={"bg-[transparent]"}
+            lable="warranty_document		"
+            // value={Product.warranty_document}
+            type="file"
+          />
+        </div>
+      </div>
+
+      {/* Usage / Lifecycle Info */}
+      <div className="mb-8">
+        <h3 className="text-lg pl-4 font-semibold text-gray-700 mb-4">
+          Lifecycle / Usage Info
+        </h3>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <Input
+            bgColor={"bg-[#f0f1f3]"}
+            value={Product.assigned_to}
+            lable="assigned_to	"
+            type="text"
+          />
+          <ClassSelect type={"Stutus *"} value={Product.status} placeholder="Please select gender" option={productStatus} />
+
+        </div>
+      </div>
+
+      {/* Other Info */}
+      <div className="mb-8">
+        <h3 className="text-lg pl-4 font-semibold text-gray-700 mb-4">Other Info</h3>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div className=' w-full px-4 mb-6'>
+            <label className="block mb-2 text-base font-normal text-[#646464]">note</label>
+            <textarea name="" value={Product.notes} className={`bg-[#f0f1f3] w-full px-4 py-3 rounded-md focus:outline-none`}
+              id=""></textarea>
+          </div>
+        </div>
+
+        <div className="mt-4 pl-4">
+          <label className="block mb-2 font-medium">Upload Product Image</label>
+          <input type="file" />
+        </div>
+      </div>
+
+      {/* Buttons */}
+      <div className="flex gap-4 pl-4">
+        <button className="bg-yellow-500 hover:bg-yellow-600 text-white px-6 py-2 rounded">
+          Save
+        </button>
+        <button className="bg-blue-900 hover:bg-blue-800 text-white px-6 py-2 rounded">
+          Reset
+        </button>
+      </div>
+    </div>
+  );
+};
+
+export default ProductForm;

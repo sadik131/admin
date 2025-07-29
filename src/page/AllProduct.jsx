@@ -12,14 +12,14 @@ function AllProduct() {
 
   const filteredData = productData.filter(item => {
     return (
-      item.category.toLowerCase().includes(searchExam.toLowerCase()) &&
-      item.category.toLowerCase().includes(searchSubject.toLowerCase()) &&
-      item.productName.includes(searchDate)
+      item.productName.toLowerCase().includes(searchExam.toLowerCase()) &&
+      item.brand.toLowerCase().includes(searchSubject.toLowerCase()) &&
+      item.brand.includes(searchDate)
     );
   });
   const statusColors = {
-    "Available": "bg-green-100 text-green-800",
-    "Unavailable": "bg-red-100 text-red-800",
+    "active": "bg-green-100 text-green-800",
+    "inactive": "bg-red-100 text-red-800",
   };
   return (
     <div className="max-w-5xl mx-auto p-6 shadow-md rounded-lg bg-white gap-5">
@@ -27,12 +27,12 @@ function AllProduct() {
 
       <div className="flex gap-4 mb-6">
         <SearchInput
-          placeholder="Search by brand..."
+          placeholder="Search by Name..."
           value={searchExam}
           onChange={(e) => setSearchExam(e.target.value)}
         />
         <SearchInput
-          placeholder="Search by id..."
+          placeholder="Search by Brand..."
           value={searchSubject}
           onChange={(e) => setSearchSubject(e.target.value)}
         />
