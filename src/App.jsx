@@ -3,7 +3,8 @@ import { Route, Routes } from 'react-router-dom';
 import Dashboard from './page/Dashboard/Dashboard.jsx';
 import AddProduct from './page/Product/AddProduct.jsx';
 import AllProduct from './page/Product/AllProduct.jsx';
-import Details from './page/Details/Details.jsx';
+import Details from './page/Product/ProductDetails.jsx';
+import UpdateProduct from './page/Product/UpdateProduct.jsx';
 
 const App = () => {
   return (
@@ -15,7 +16,7 @@ const App = () => {
           <Routes>
             <Route path="/" element={<Dashboard />} />
             <Route path="/add" element={<AddProduct />} />
-            <Route path="/add/:productCode" element={<AddProduct />} />
+            <Route path="/add/:productCode" element={<UpdateProduct />} />
             <Route path="/details" element={<Details />} />
             <Route path="/all" element={<AllProduct />} />
           </Routes>

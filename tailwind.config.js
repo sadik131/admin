@@ -14,6 +14,7 @@ export default {
         accent: '#ffaa01',
         LightYellow: '#eab308',
         LightBlue: '#1e3a8a',
+        textColor: '#111',
       },
     },
   },
