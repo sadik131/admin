@@ -1,9 +1,9 @@
-import Sidebar from './components/Sidebar.jsx';
+import Sidebar from './components/Layout/Sidebar.jsx';
 import { Route, Routes } from 'react-router-dom';
 import Dashboard from './page/Dashboard/Dashboard.jsx';
-import AddProduct from './page/ProductPage/AddProduct.jsx';
-import AllProduct from './page/ProductPage/AllProduct.jsx';
-import Details from './page/DetailsPage/Details.jsx';
+import AddProduct from './page/Product/AddProduct.jsx';
+import AllProduct from './page/Product/AllProduct.jsx';
+import Details from './page/Details/Details.jsx';
 
 const App = () => {
   return (

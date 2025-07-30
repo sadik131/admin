@@ -1,14 +1,14 @@
 import React from 'react'
-import AddUser from './AddUser'
-import ExamResults from './ExamResults'
-import Expenses from './Expenses'
+import AddStudent from '../student/AddStudent'
+import StudentExpenses from '../student/StudentExpenses'
+import SutdentResults from '../student/SutdentResults'
 
 function Dashboard() {
     return (
         <div className="min-h-screen flex flex-col items-center justify-center bg-secondary gap-4">
-            <AddUser />
-            <ExamResults />
-            <Expenses />
+            <AddStudent />
+            <SutdentResults />
+            <StudentExpenses />
         </div>
     )
 }

@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import logo from '../assets/logo.png'
+// import logo from '../assets/logo.png'
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { RxCross2 } from 'react-icons/rx';
 import { MdDashboard } from 'react-icons/md';
