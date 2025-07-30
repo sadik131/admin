@@ -1,13 +1,9 @@
-import React from 'react';
-import AddUser from './page/AddUser.jsx';
-import ExamResults from './page/ExamResults.jsx';
-import Expenses from './page/Expenses.jsx';
 import Sidebar from './components/Sidebar.jsx';
 import { Route, Routes } from 'react-router-dom';
-import Dashboard from './page/Dashboard.jsx';
-import AddProduct from './page/AddProduct.jsx';
-import AllProduct from './page/AllProduct.jsx';
-import Details from './page/Details.jsx';
+import Dashboard from './page/Dashboard/Dashboard.jsx';
+import AddProduct from './page/ProductPage/AddProduct.jsx';
+import AllProduct from './page/ProductPage/AllProduct.jsx';
+import Details from './page/DetailsPage/Details.jsx';
 
 const App = () => {
   return (

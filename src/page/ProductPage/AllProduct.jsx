@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
-import { examData, productData, productTableHeaders } from '../option';
-import SearchInput from '../components/SearchInput';
-import Table from '../components/TableData';
-import TableRow from '../components/TableRow';
+import { examData, productData, productTableHeaders } from '../../option';
+import SearchInput from '../../components/Form/SearchField';
+import Table from '../../components/Table/TableHead';
+import TableRow from '../../components/Table/TableBody';
 
 function AllProduct() {
   const [searchExam, setSearchExam] = useState('');
@@ -22,7 +22,7 @@ function AllProduct() {
     "inactive": "bg-red-100 text-red-800",
   };
   return (
-    <div className="max-w-5xl mx-auto p-6 shadow-md rounded-lg bg-white gap-5">
+    <div className="max-w-5xl mx-auto p-6 shadow-md rounded-lg bg-white gap-5 font-roboto">
       <h1 className="text-2xl font-bold text-gray-800 text-center mb-6">All Product</h1>
 
       <div className="flex gap-4 mb-6">

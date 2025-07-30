@@ -19,14 +19,15 @@ const DatePicke = ({ lable, value }) => {
 
   return (
     <div className="w-full mb-4 px-4">
-      <label className="block mb-2 text-base font-normal text-[#646464]">
+      <label className="block mb-2 text-base font-normal text-secondary">
         {lable}
       </label>
       <div className="relative">
         <input
           value={formattedValue}
           type="date"
-          className="w-full cursor-pointer px-4 py-3 text-[#646464] bg-[#f3f4f6] custom-date-input border border-transparent rounded-md shadow-sm appearance-none focus:outline-none focus:ring-2 focus:ring-blue-500"
+          onChange={() => {}}
+          className="w-full cursor-pointer px-4 py-3 text-secondary bg-[#f3f4f6] custom-date-input border border-transparent rounded-md shadow-sm appearance-none focus:outline-none focus:ring-2 focus:ring-blue-500"
           placeholder="dd/mm/yyyy"
         />
         <div

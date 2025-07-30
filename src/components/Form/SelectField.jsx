@@ -52,7 +52,7 @@ const ClassSelect = ({ type, value, option }) => {
 
   return (
     <div className="relative w-full px-4 mb-6" ref={wrapperRef}>
-      <label className="block mb-2 text-base font-normal text-[#646464]">{type}</label>
+      <label className="block mb-2 text-base font-normal text-secondary">{type}</label>
 
       <div
         className="w-full px-4 py-3 text-[#b4b4b4] flex justify-between items-center bg-[#f0f1f3] rounded-md shadow-sm cursor-pointer "

@@ -1,4 +1,3 @@
-import React from "react";
 
 const ProductDetails = () => {
 
@@ -31,7 +30,7 @@ const ProductDetails = () => {
   publishDate: "2025-07-28",
 };
   return (
-    <div className=" mx-auto p-6 bg-white shadow-lg rounded-md">
+    <div className=" mx-auto p-6 bg-white shadow-lg rounded-md font-roboto">
       <h2 className="text-2xl font-bold mb-4 text-center">Product Details</h2>
 
       <div className="flex flex-col md:flex-row gap-6">

@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
-import Input from "../components/Input";
-import DatePicke from "../components/DatePick";
-import ClassSelect from "../components/ClassSelect";
-import { brand, category, productStatus } from "../option";
+import Input from "../../components/Form/InputField";
+import DatePicke from "../../components/Form/DateField";
+import ClassSelect from "../../components/Form/SelectField";
+import { brand, category, productStatus } from "../../option";
 import { useParams } from "react-router-dom";
 
 const ProductForm = () => {
@@ -73,12 +73,12 @@ const ProductForm = () => {
 
 
   return (
-    <div className="p-6">
-      <h1 className="text-xl font-semibold mb-4">{Product ? "Update product" : "Add new Product"}</h1>
+    <div className="p-6 font-roboto">
+      <h1 className="text-xl font-semibold mb-4">{(Product && productCode) ? "Update product" : "Add new Product"}</h1>
 
       {/* Basic Info */}
       <div className="mb-8">
-        <h3 className="text-lg pl-4 font-semibold text-gray-700 mb-4">Basic Info</h3>
+        <h3 className="text-lg pl-4 font-semibold text-primary mb-4">Basic Info</h3>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           <Input
             value={Product.productName}
@@ -111,7 +111,7 @@ const ProductForm = () => {
 
       {/* Stock Info */}
       <div className="mb-8">
-        <h3 className="text-lg pl-4 font-semibold text-gray-700 mb-4">Stock Info</h3>
+        <h3 className="text-lg pl-4 font-semibold text-primary mb-4">Stock Info</h3>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           <Input
             bgColor={"bg-[#f0f1f3]"}
@@ -136,7 +136,7 @@ const ProductForm = () => {
 
       {/* Purchase Info */}
       <div className="mb-8">
-        <h3 className="text-lg pl-4 font-semibold text-gray-700 mb-4">Purchase Info</h3>
+        <h3 className="text-lg pl-4 font-semibold text-primary mb-4">Purchase Info</h3>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           <DatePicke
             value={Product.publishDate}
@@ -171,7 +171,7 @@ const ProductForm = () => {
 
       {/* Warranty Info */}
       <div className="mb-8">
-        <h3 className="text-lg pl-4 font-semibold text-gray-700 mb-4">Warranty Info</h3>
+        <h3 className="text-lg pl-4 font-semibold text-primary mb-4">Warranty Info</h3>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           <Input
             bgColor={"bg-[#f0f1f3]"}
@@ -203,7 +203,7 @@ const ProductForm = () => {
 
       {/* Usage / Lifecycle Info */}
       <div className="mb-8">
-        <h3 className="text-lg pl-4 font-semibold text-gray-700 mb-4">
+        <h3 className="text-lg pl-4 font-semibold text-primary mb-4">
           Lifecycle / Usage Info
         </h3>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -220,10 +220,10 @@ const ProductForm = () => {
 
       {/* Other Info */}
       <div className="mb-8">
-        <h3 className="text-lg pl-4 font-semibold text-gray-700 mb-4">Other Info</h3>
+        <h3 className="text-lg pl-4 font-semibold text-primary mb-4">Other Info</h3>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           <div className=' w-full px-4 mb-6'>
-            <label className="block mb-2 text-base font-normal text-[#646464]">note</label>
+            <label className="block mb-2 text-base font-normal text-secondary">note</label>
             <textarea name="" value={Product.notes} className={`bg-[#f0f1f3] w-full px-4 py-3 rounded-md focus:outline-none`}
               id=""></textarea>
           </div>
@@ -237,10 +237,10 @@ const ProductForm = () => {
 
       {/* Buttons */}
       <div className="flex gap-4 pl-4">
-        <button className="bg-yellow-500 hover:bg-yellow-600 text-white px-6 py-2 rounded">
+        <button className="bg-Lightyellow hover:bg-yellow-600 text-white px-6 py-2 rounded">
           Save
         </button>
-        <button className="bg-blue-900 hover:bg-blue-800 text-white px-6 py-2 rounded">
+        <button className="bg-Lightblue hover:bg-blue-800 text-white px-6 py-2 rounded">
           Reset
         </button>
       </div>

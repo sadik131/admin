@@ -22,7 +22,7 @@ const TableRow = ({ data, index, statusColors = {} }) => {
     if (key === 'status') {
       return `font-medium rounded-md ${statusColors[value] || 'bg-gray-100 text-gray-800'}`;
     }
-    return 'text-gray-900';
+    return 'text-secondary';
   };
 
   return (
@@ -43,7 +43,7 @@ const TableRow = ({ data, index, statusColors = {} }) => {
         </td>
       ))}
       {/* fixed in the last */}
-      <td className="text-center align-middle px-4 py-2 text-gray-500">
+      <td className="text-center align-middle px-4 py-2 text-primary">
         <div className="flex items-center justify-center gap-4">
           <FaEdit
             onClick={() => handleClick(data.productCode)}

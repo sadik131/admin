@@ -1,14 +1,14 @@
 import React from 'react'
-import ClassSelect from '../components/ClassSelect';
-import Input from '../components/Input.jsx'
-import { classOptions, gender, role } from '../option';
-import DatePick from '../components/DatePick';
+import { classOptions, gender, role } from '../../option.js';
+import ClassSelect from '../../components/Form/SelectField.jsx';
+import Input from '../../components/Form/InputField.jsx';
+import DatePicke from '../../components/Form/DateField.jsx';
 
 function AddUser() {
   return (
      <form className="w-full h-full bg-white p-4">
         <div className='mb-3'>
-          <h1 className="text-xl font-semibold mb-4">Add new user</h1>
+          <h1 className="text-xl font-semibold font-roboto mb-4">Add new user</h1>
         </div>
         {/* 1st row */}
         <div className='grid grid-cols-4'>
@@ -33,13 +33,13 @@ function AddUser() {
             lable="Mother's Name"
             type="text"
           />
-          <DatePick lable={"DBS"} />
+          <DatePicke lable={"DBS"} />
           <ClassSelect type={"Religion  *"} placeholder="Please select gender" option={gender} />
         </div>
         {/* 3rd row */}
         
         <div className='grid grid-cols-4'>
-          <DatePick lable={"Date Of Birth *"} />
+          {/* <DatePicker lable={"Date Of Birth *"} /> */}
           <Input
             lable="E-Mail"
             type="email"
@@ -56,7 +56,7 @@ function AddUser() {
             lable="Mother's Name"
             type="text"
           />
-          <DatePick lable={"DBS"} />
+          {/* <DatePick lable={"DBS"} /> */}
           <ClassSelect type={"Religion  *"} placeholder="Please select gender" option={gender} />
         </div>
         {/* 4th row */}
@@ -74,7 +74,7 @@ function AddUser() {
         {/* 5th row */}
         <div className='grid grid-cols-4'>
           <div className='px-4 mb-6 col-span-2'>
-            <label className="block mb-2 text-base font-normal text-[#646464]">Address *</label>
+            <label className="block mb-2 text-base font-normal text-secondary">Address *</label>
             <textarea className='bg-[#f0f1f3] w-full px-4 py-1 rounded-md focus:outline-none col-span-2' name="" id=""></textarea>
           </div>
         </div>
