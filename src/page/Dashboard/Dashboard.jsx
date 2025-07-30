@@ -1,16 +1,18 @@
-import React from 'react'
-import AddStudent from '../student/AddStudent'
-import StudentExpenses from '../student/StudentExpenses'
-import SutdentResults from '../student/SutdentResults'
+import BarChartCompo from "./BarChart";
+import LineChartCompo from "./LineChart";
+import { PaiChartCompo } from "./PaiChart";
 
-function Dashboard() {
+export default function DashBoard() {
     return (
-        <div className="min-h-screen flex flex-col items-center justify-center bg-secondary gap-4">
-            <AddStudent />
-            <SutdentResults />
-            <StudentExpenses />
-        </div>
-    )
+        <>
+            <div className='h-full w-full'>
+                <h1 className='text-3xl font-bold text-textColor'>Dashboard</h1>
+                <div className="flex">
+                    <BarChartCompo />
+                    <LineChartCompo />
+                </div>
+                <PaiChartCompo />
+            </div>
+        </>
+    );
 }
-
-export default Dashboard

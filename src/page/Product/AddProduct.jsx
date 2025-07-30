@@ -143,25 +143,25 @@ const ProductForm = () => {
             lable={"Purchase Date"} />
           <Input
             bgColor={"bg-[#f0f1f3]"}
-            lable="purchase_price"
+            lable="purchase price"
             value={Product.purchase_price}
             type="number"
           />
           <Input
             bgColor={"bg-[#f0f1f3]"}
-            lable="supplier_name"
+            lable="supplier name"
             value={Product.supplier_name}
             type="text"
           />
           <Input
             bgColor={"bg-[#f0f1f3]"}
-            lable="supplier_contact	"
+            lable="supplier contact	"
             value={Product.supplier_contact}
             type="text"
           />
           <Input
             bgColor={"bg-[transparent]"}
-            lable="purchase_receipt	"
+            lable="purchase receipt	"
             // value={Product.purchase_receipt}
             type="file"
           />
@@ -175,27 +175,26 @@ const ProductForm = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           <Input
             bgColor={"bg-[#f0f1f3]"}
-            lable="warranty_period"
+            lable="warranty period"
             value={Product.warranty_period}
             type="text"
           />
           <DatePicke
             value={Product.warranty_start_date}
-            lable={"warranty_start_date"} />
+            lable={"warranty start date"} />
           <DatePicke
             value={Product.warranty_end_date}
-            lable={"warranty_end_date"} />
+            lable={"warranty end date"} />
 
           <Input
             bgColor={"bg-[#f0f1f3]"}
             value={Product.warranty_terms}
-            lable="warranty_terms	"
+            lable="warranty terms	"
             type="text"
           />
           <Input
             bgColor={"bg-[transparent]"}
-            lable="warranty_document		"
-            // value={Product.warranty_document}
+            lable="warranty document		"
             type="file"
           />
         </div>
@@ -210,7 +209,7 @@ const ProductForm = () => {
           <Input
             bgColor={"bg-[#f0f1f3]"}
             value={Product.assigned_to}
-            lable="assigned_to	"
+            lable="assigned to	"
             type="text"
           />
           <ClassSelect type={"Stutus *"} value={Product.status} placeholder="Please select gender" option={productStatus} />
