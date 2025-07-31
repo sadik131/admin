@@ -1,19 +1,22 @@
-import BarChartCompo from "../../components/Dashboard/Charts/BarChart";
+import ProgressCard from "../../components/dashboard/progress/ProgressCard";
+import PaiChartCompo from "../../components/Dashboard/Charts/PaiChart";
 import LineChartCompo from "../../components/Dashboard/Charts/LineChart";
-import { PaiChartCompo } from "../../components/Dashboard/Charts/PaiChart";
+import TopSuppliersTable from "./TopSuppliersTable";
+import { productTableHeaders, suppliers } from "../../option";
+import AllProduct from "../product/AllProduct";
 
 export default function DashBoard() {
+
     return (
         <>
-            <div className='h-full w-full flex flex-col gap-10 p-10'>
+            <div className='h-full bg-bgColor w-full flex flex-col gap-10 p-10'>
                 <h1 className='text-3xl font-bold text-textColor '>Dashboard</h1>
-                <div className="w-full">
+                <ProgressCard />
+                <div className="flex gap-4">
+                    <PaiChartCompo />
                     <LineChartCompo />
                 </div>
-                <div className="flex gap-10">
-                    <BarChartCompo />
-                    <PaiChartCompo />
-                </div>
+                <AllProduct />
             </div>
         </>
     );

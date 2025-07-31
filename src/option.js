@@ -241,3 +241,77 @@ export const productData = [
         publishDate: "2025-07-22"
     }
 ];
+
+export const tableHead = [
+    { id: 'id', label: 'SL' },
+    { id: 'name', label: 'Name' },
+    { id: 'amount', label: 'Amount' }
+];
+export const RecentTableHead = [
+    { id: '1', label: 'SL' },
+    { id: '2', label: 'Date' },
+    { id: '3', label: 'Payment Type' },
+    { id: '4', label: 'Paid Amount' },
+    { id: '5', label: 'Due Amount' },
+    { id: '6', label: 'Payable Amount' },
+];
+
+export const RechentData = [
+    {id:1, date: '2023-10-01', paymentType: 'Cash', paidAmount: '$100.00', dueAmount: '$0.00', payableAmount: '$100.00'},
+    {id:2, date: '2023-10-02', paymentType: 'Credit Card', paidAmount: '$200.00', dueAmount: '$50.00', payableAmount: '$250.00'},
+    {id:3, date: '2023-10-03', paymentType: 'Bank Transfer', paidAmount: '$150.00', dueAmount: '$0.00', payableAmount: '$150.00'},
+    {id:4, date: '2023-10-04', paymentType: 'Cash', paidAmount: '$300.00', dueAmount: '$100.00', payableAmount: '$400.00'},
+    {id:5, date: '2023-10-05', paymentType: 'Credit Card', paidAmount: '$250.00', dueAmount: '$0.00', payableAmount: '$250.00'},
+];
+export const suppliers = [
+    { id: 1, name: "Esther Howard", amount: "$30,00.00" },
+    { id: 2, name: "Wade Warren", amount: "$40,00.00" },
+    { id: 3, name: "Jenny Wilson", amount: "$50,00.00" },
+    { id: 4, name: "Kristin Watson", amount: "$60,00.00" },
+    { id: 5, name: "Kristin Watson", amount: "$60,00.00" },
+    { id: 6, name: "Kristin Watson", amount: "$60,00.00" }
+];
+export const customers = [
+    {
+        id: 1,
+        name: "Esther Howard",
+        amount: "$3,250.00",
+        lastPurchase: "2023-05-15",
+        status: "Regular"
+    },
+    {
+        id: 2,
+        name: "Wade Warren",
+        amount: "$4,180.50",
+        lastPurchase: "2023-06-22",
+        status: "Premium"
+    },
+    {
+        id: 3,
+        name: "Jenny Wilson",
+        amount: "$5,320.75",
+        lastPurchase: "2023-07-10",
+        status: "VIP"
+    },
+    {
+        id: 4,
+        name: "Robert Fox",
+        amount: "$2,150.00",
+        lastPurchase: "2023-08-05",
+        status: "New"
+    },
+    {
+        id: 5,
+        name: "Kristin Watson",
+        amount: "$6,450.90",
+        lastPurchase: "2023-08-18",
+        status: "Premium"
+    },
+    {
+        id: 6,
+        name: "Jacob Jones",
+        amount: "$1,980.25",
+        lastPurchase: "2023-09-02",
+        status: "Regular"
+    }
+];
