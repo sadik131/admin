@@ -5,6 +5,7 @@ import AddProduct from './page/Product/AddProduct.jsx';
 import AllProduct from './page/Product/AllProduct.jsx';
 import Details from './page/Product/ProductDetails.jsx';
 import UpdateProduct from './page/Product/UpdateProduct.jsx';
+import Button from './components/ui/SkuInput.jsx';
 
 const App = () => {
   return (
@@ -12,7 +13,7 @@ const App = () => {
       <div className='flex flex-row'>
         <Sidebar />
         {/* Main content area */}
-        <div className="p-6 w-full">
+        <div className="w-full">
           <Routes>
             <Route path="/" element={<Dashboard />} />
             <Route path="/add" element={<AddProduct />} />

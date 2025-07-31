@@ -15,6 +15,7 @@ export default {
         LightYellow: '#eab308',
         LightBlue: '#1e3a8a',
         textColor: '#111',
+        bgColor: '#F7F7F7',
       },
     },
   },

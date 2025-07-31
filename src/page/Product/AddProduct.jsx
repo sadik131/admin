@@ -4,6 +4,7 @@ import DatePicke from "../../components/Form/DateField";
 import ClassSelect from "../../components/Form/SelectField";
 import { brand, category, productStatus } from "../../option";
 import { useParams } from "react-router-dom";
+import SkuInput from "../../components/ui/SkuInput";
 
 const ProductForm = () => {
   const [Product, setProduct] = useState({
@@ -73,25 +74,26 @@ const ProductForm = () => {
 
 
   return (
-    <div className="p-6 font-roboto">
+    <div className="px-6 pt-6 font-roboto bg-bgColor">
       <h1 className="text-xl font-semibold mb-4">{(Product && productCode) ? "Update product" : "Add new Product"}</h1>
 
       {/* Basic Info */}
-      <div className="mb-8">
-        <h3 className="text-lg pl-4 font-semibold text-primary mb-4">Basic Info</h3>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div className="bg-white rounded-lg p-6 mb-8">
+        <h3 className="text-lg pl-4 font-semibold text-textColor mb-4">Product Information</h3>
+        <div className="grid grid-cols-1 md:grid-cols-3 ">
           <Input
             value={Product.productName}
             bgColor={"bg-[#f0f1f3]"}
             lable="Product Name *"
             type="text"
           />
-          <Input
+          <SkuInput />
+          {/* <Input
             value={Product.sku}
             bgColor={"bg-[#f0f1f3]"}
             lable="SKU *"
             type="text"
-          />
+          /> */}
           <ClassSelect value={Product.category_type} type={"Category Type  *"} placeholder="Please select Category" option={category} />
           <ClassSelect type={"Brand Type  *"} value={Product.brand} placeholder="Please select Brand" option={brand} />
           <Input
@@ -110,8 +112,8 @@ const ProductForm = () => {
       </div>
 
       {/* Stock Info */}
-      <div className="mb-8">
-        <h3 className="text-lg pl-4 font-semibold text-primary mb-4">Stock Info</h3>
+      <div className="bg-white rounded-lg p-6 mb-8">
+        <h3 className="text-lg pl-4 font-semibold text-textColor mb-4">Stock Info</h3>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           <Input
             bgColor={"bg-[#f0f1f3]"}
@@ -135,9 +137,9 @@ const ProductForm = () => {
       </div>
 
       {/* Purchase Info */}
-      <div className="mb-8">
-        <h3 className="text-lg pl-4 font-semibold text-primary mb-4">Purchase Info</h3>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div className="bg-white rounded-lg p-6 mb-8">
+        <h3 className="text-lg pl-4 font-semibold text-textColor mb-4">Purchase Info</h3>
+        <div className="grid grid-cols-1 md:grid-cols-3">
           <DatePicke
             value={Product.publishDate}
             lable={"Purchase Date"} />
@@ -170,9 +172,9 @@ const ProductForm = () => {
       </div>
 
       {/* Warranty Info */}
-      <div className="mb-8">
-        <h3 className="text-lg pl-4 font-semibold text-primary mb-4">Warranty Info</h3>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div className="bg-white rounded-lg p-6 mb-8">
+        <h3 className="text-lg pl-4 font-semibold text-textColor mb-4">Warranty Info</h3>
+        <div className="grid grid-cols-1 md:grid-cols-3">
           <Input
             bgColor={"bg-[#f0f1f3]"}
             lable="warranty period"
@@ -201,8 +203,8 @@ const ProductForm = () => {
       </div>
 
       {/* Usage / Lifecycle Info */}
-      <div className="mb-8">
-        <h3 className="text-lg pl-4 font-semibold text-primary mb-4">
+      <div className="bg-white rounded-lg p-6 mb-8">
+        <h3 className="text-lg pl-4 font-semibold text-textColor mb-4">
           Lifecycle / Usage Info
         </h3>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -218,28 +220,28 @@ const ProductForm = () => {
       </div>
 
       {/* Other Info */}
-      <div className="mb-8">
-        <h3 className="text-lg pl-4 font-semibold text-primary mb-4">Other Info</h3>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div className="bg-white rounded-lg p-6 mb-8">
+        <h3 className="text-lg pl-4 font-semibold text-textColor mb-4">Other Info</h3>
+        <div className="flex">
           <div className=' w-full px-4 mb-6'>
-            <label className="block mb-2 text-base font-normal text-secondary">note</label>
-            <textarea name="" value={Product.notes} className={`bg-[#f0f1f3] w-full px-4 py-3 rounded-md focus:outline-none`}
+            <label className="block mb-2 text-base font-normal text-secondary">message</label>
+            <textarea name="" value={Product.notes} className={`bg-[#f0f1f3] h-40 w-full px-4 py-3 rounded-md focus:outline-none`}
               id=""></textarea>
           </div>
-        </div>
 
-        <div className="mt-4 pl-4">
-          <label className="block mb-2 font-medium">Upload Product Image</label>
-          <input type="file" />
+          <div className="mt-4 pl-4">
+            <label className="block mb-2 font-medium">Upload Product Image</label>
+            <input type="file" />
+          </div>
         </div>
       </div>
 
       {/* Buttons */}
       <div className="flex gap-4 pl-4">
-        <button className="bg-Lightyellow hover:bg-yellow-600 text-white px-6 py-2 rounded">
+        <button className="bg-LightYellow hover:bg-yellow-600 text-white px-6 py-2 rounded">
           Save
         </button>
-        <button className="bg-Lightblue hover:bg-blue-800 text-white px-6 py-2 rounded">
+        <button className="bg-LightBlue hover:bg-blue-800 text-white px-6 py-2 rounded">
           Reset
         </button>
       </div>
