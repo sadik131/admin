@@ -1,9 +1,7 @@
 import ProgressCard from "../../components/dashboard/progress/ProgressCard";
 import PaiChartCompo from "../../components/Dashboard/Charts/PaiChart";
-import LineChartCompo from "../../components/Dashboard/Charts/LineChart";
-import TopSuppliersTable from "./TopSuppliersTable";
-import { productTableHeaders, suppliers } from "../../option";
 import AllProduct from "../product/AllProduct";
+import LineChartCompo from "../../components/dashboard/charts/LineChart";
 
 export default function DashBoard() {
 
@@ -16,7 +14,7 @@ export default function DashBoard() {
                     <PaiChartCompo />
                     <LineChartCompo />
                 </div>
-                <AllProduct />
+                <AllProduct title="Recent Purchases" width="w-full"/>
             </div>
         </>
     );

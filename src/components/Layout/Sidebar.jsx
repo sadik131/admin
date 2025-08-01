@@ -13,7 +13,7 @@ function Sidebar() {
 
 
     return (
-        <div className={`${toggle ? "w-1/6" : "w-10"} bg-[#042954] font-roboto transition-all duration-300 ease-in-out`} >
+        <div className={`${toggle ? "w-1/5" : "w-10"} bg-[#042954] font-roboto transition-all duration-300 ease-in-out`} >
             {/* top logo */}
             <div className='flex justify-between items-center p-3 bg-gradient-to-r from-[#ff9d01] to-[#ffaa01]'>
                 {toggle && <div className=''>
@@ -53,6 +53,10 @@ function Sidebar() {
                     <div className="flex flex-col gap-1 text-sm w-full">
                         <Link to={"/add"} className="py-2  w-full pl-[60px] items-center pr-5 inline-flex cursor-pointer hover:text-yellow-400 "><FaAngleRight className='mr-1'/> Add Product</Link>
                         <Link to={"/all"} className="py-2  w-full pl-[60px] items-center pr-5 inline-flex cursor-pointer hover:text-yellow-400 "><FaAngleRight className='mr-1'/> All Product</Link>
+                        <Link to={"/expire"} className="py-2  w-full pl-[60px] items-center pr-5 inline-flex cursor-pointer hover:text-yellow-400 "><FaAngleRight className='mr-1'/>Expired Product</Link>
+                        <Link to={"/stocks"} className="py-2  w-full pl-[60px] items-center pr-5 inline-flex cursor-pointer hover:text-yellow-400 "><FaAngleRight className='mr-1'/>Low Stock</Link>
+                        <Link to={"/Category"} className="py-2  w-full pl-[60px] items-center pr-5 inline-flex cursor-pointer hover:text-yellow-400 "><FaAngleRight className='mr-1'/>Category</Link>
+                        <Link to={"/QR"} className="py-2  w-full pl-[60px] items-center pr-5 inline-flex cursor-pointer hover:text-yellow-400 "><FaAngleRight className='mr-1'/>Print QR</Link>
                     </div>
                 )}
             </ div>

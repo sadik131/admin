@@ -57,7 +57,7 @@ const PaiChartCompo = () => {
     <div className="bg-white rounded-lg w-full">
       {/* top */}
       <div className="flex py-4 px-6 rounded-t-lg border-b border-[#d1d5db80] justify-between items-center">
-        <h2 className="text-lg font-semibold">Overall Report</h2>
+        <h2 className="text-lg font-semibold">Product by Category</h2>
         <button className="text-blue-600 text-sm font-medium">View All</button>
       </div>
       {/* chart */}

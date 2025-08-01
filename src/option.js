@@ -104,26 +104,26 @@ export const productTableHeaders = [
     "image",
     "productName",
     "sku",
-    "category_type",
+    "category type",
     "brand",
-    "model_number",
-    "serial_number",
+    "model number",
+    "serial number",
     "quantity",
-    "reorder_level",
-    "warehouse_location",
-    "purchase_date",
-    "purchase_price",
-    "supplier_name",
-    "supplier_contact",
-    "purchase_receipt",
-    "warranty_period",
-    "warranty_start_date",
-    "warranty_end_date",
-    "warranty_terms",
-    "warranty_document",
-    "assigned_to",
+    "reorder level",
+    "warehouse location",
+    "purchase date",
+    "purchase price",
+    "supplier name",
+    "supplier contact",
+    "purchase receipt",
+    "warranty period",
+    "warranty start date",
+    "warranty end date",
+    "warranty terms",
+    "warranty document",
+    "assigned to",
     "status",
-    "usage_status",
+    "usage status",
     "notes",
     "publishDate",
     "Action"
@@ -314,4 +314,55 @@ export const customers = [
         lastPurchase: "2023-09-02",
         status: "Regular"
     }
+];
+
+export const expiredTh = [
+    "SQU",
+    "Product",
+    "Manufacturer Date",
+    "Expiry Date",
+    "Action"
+];
+
+export const expiredData = [
+    { SQU: '#001', Product: 'Milk', ManufacturerDate: '2023-01-01', ExpiryDate: '2023-02-01' },
+    { SQU: '#002', Product: 'Bread', ManufacturerDate: '2023-01-05', ExpiryDate: '2023-01-15' },
+    { SQU: '#003', Product: 'Eggs', ManufacturerDate: '2023-01-10', ExpiryDate: '2023-01-20' },
+    { SQU: '#004', Product: 'Cheese', ManufacturerDate: '2023-01-15', ExpiryDate: '2023-02-15' },
+    { SQU: '#005', Product: 'Yogurt', ManufacturerDate: '2023-01-20', ExpiryDate: '2023-02-20' }
+]
+
+export const lowStockTh = [
+ "Warehouse",
+ "Store",
+ "Product Name",
+ "Category",
+ "SkU",
+ "Qty",
+ "qty Alert",
+ "Action"
+]
+
+export const lowstockData = [
+    { Warehouse: 'Warehouse A', Store: 'Store 1', ProductName: 'Laptop', Category: 'Electronics', SkU: 'LAP123', Qty: 5, qtyAlert: 10 ,productImg: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D",},
+    { Warehouse: 'Warehouse B', Store: 'Store 2', ProductName: 'Smartphone', Category: 'Electronics', SkU: 'SMP456', Qty: 3, qtyAlert: 5 },
+    { Warehouse: 'Warehouse C', Store: 'Store 3', ProductName: 'Tablet', Category: 'Electronics', SkU: 'TAB789', Qty: 8, qtyAlert: 10 },
+    { Warehouse: 'Warehouse D', Store: 'Store 4', ProductName: 'Headphones', Category: 'Accessories', SkU: 'HPD012', Qty: 2, qtyAlert: 5 },
+    { Warehouse: 'Warehouse E', Store: 'Store 5', ProductName: 'Charger', Category: 'Accessories', SkU: 'CHR345', Qty: 1, qtyAlert: 3 }
+];
+
+export const categoryTh = [
+    "Category",
+    "Category slug",
+    "Created On",
+    "Status",
+    "Action"
+]
+
+export const categoryData = [
+    { Category: 'Electronics', CategorySlug: 'electronics', CreatedOn: '2023-01-01', status: 'active' },
+    { Category: 'Clothing', CategorySlug: 'clothing', CreatedOn: '2023-02-15', status: 'active' },
+    { Category: 'Home Appliances', CategorySlug: 'home-appliances', CreatedOn: '2023-03-10', status: 'Inactive' },
+    { Category: 'Books', CategorySlug: 'books', CreatedOn: '2023-04-20', status: 'active' },
+    { Category: 'Sports Equipment', CategorySlug: 'sports-equipment', CreatedOn: '2023-05-05', status: 'active' }
 ];

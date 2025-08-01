@@ -35,47 +35,12 @@ const ProductForm = () => {
     publishDate: '',
   });
 
-  const { productCode } = useParams();
-
-  useEffect(() => {
-    if (productCode) {
-      const fetchedProduct = {
-        image: "https://images.unsplash.com/photo-1541643600914-78b084683601?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D",
-        productName: "Gaming Laptop",
-        sku: "GL-RTX4060",
-        category_type: "Computers",
-        brand: "Xenon",
-        model_number: "XEN-GL4060",
-        serial_number: "SN-GL456321",
-        quantity: 10,
-        reorder_level: 5,
-        warehouse_location: "C3-Bay-1",
-        purchase_date: "2025-03-05",
-        purchase_price: 950.00,
-        supplier_name: "GameGear Supplies",
-        supplier_contact: "01555667788",
-        purchase_receipt: "/receipts/gaming-laptop.pdf",
-        warranty_period: "18 months",
-        warranty_start_date: "2025-03-05",
-        warranty_end_date: "2026-09-04",
-        warranty_terms: "Covers GPU and motherboard only.",
-        warranty_document: "/warranty/gl.pdf",
-        assigned_to: "Graphics Department",
-        status: "inactive",
-        usage_status: "under_repair",
-        notes: "Overheating issue reported; sent for inspection.",
-        publishDate: "2025-07-20"
-      };
-
-      setProduct(fetchedProduct);
-    }
-  }, [productCode]);
 
 
 
   return (
     <div className="px-6 pt-6 font-roboto bg-bgColor">
-      <h1 className="text-xl font-semibold mb-4">{(Product && productCode) ? "Update product" : "Add new Product"}</h1>
+      <h1 className="text-xl font-semibold mb-4">Add new Product</h1>
 
       {/* Basic Info */}
       <div className="bg-white rounded-lg p-6 mb-8">
@@ -88,12 +53,6 @@ const ProductForm = () => {
             type="text"
           />
           <SkuInput />
-          {/* <Input
-            value={Product.sku}
-            bgColor={"bg-[#f0f1f3]"}
-            lable="SKU *"
-            type="text"
-          /> */}
           <ClassSelect value={Product.category_type} type={"Category Type  *"} placeholder="Please select Category" option={category} />
           <ClassSelect type={"Brand Type  *"} value={Product.brand} placeholder="Please select Brand" option={brand} />
           <Input
