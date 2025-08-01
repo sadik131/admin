@@ -2,10 +2,8 @@ import React, { useState } from 'react'
 import { expiredData, expiredTh, sortOption } from '../../option';
 import SearchInput from '../../components/Form/SearchField';
 import Table from '../../components/Table/TableHead';
-import TableRow from '../../components/Table/TableBody';
 import ClassSelect from '../../components/Form/SelectField';
-import ExpiredTable from '../../components/table/ExpiredTable';
-import CommonTableRow from '../../components/table/CommonTableRow';
+import CommonTableRow from '../../components/Table/CommonTableRow';
 
 function ExpiredProduct() {
 
@@ -37,7 +35,7 @@ function ExpiredProduct() {
                                 onChange={(e) => setSearchExam(e.target.value)}
                             />
                         </div>
-                        <div className='flex w-1/2'>
+                        <div className='flex w-1/2 justify-end'>
                             <ClassSelect placeholder="Product" padding="px-4 py-2" option={expiredData.map(data => data.Product)} />
                             <ClassSelect placeholder="Sort by date" padding="px-4 py-2" option={sortOption} />
                         </div>

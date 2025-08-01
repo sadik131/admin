@@ -257,11 +257,11 @@ export const RecentTableHead = [
 ];
 
 export const RechentData = [
-    {id:1, date: '2023-10-01', paymentType: 'Cash', paidAmount: '$100.00', dueAmount: '$0.00', payableAmount: '$100.00'},
-    {id:2, date: '2023-10-02', paymentType: 'Credit Card', paidAmount: '$200.00', dueAmount: '$50.00', payableAmount: '$250.00'},
-    {id:3, date: '2023-10-03', paymentType: 'Bank Transfer', paidAmount: '$150.00', dueAmount: '$0.00', payableAmount: '$150.00'},
-    {id:4, date: '2023-10-04', paymentType: 'Cash', paidAmount: '$300.00', dueAmount: '$100.00', payableAmount: '$400.00'},
-    {id:5, date: '2023-10-05', paymentType: 'Credit Card', paidAmount: '$250.00', dueAmount: '$0.00', payableAmount: '$250.00'},
+    { id: 1, date: '2023-10-01', paymentType: 'Cash', paidAmount: '$100.00', dueAmount: '$0.00', payableAmount: '$100.00' },
+    { id: 2, date: '2023-10-02', paymentType: 'Credit Card', paidAmount: '$200.00', dueAmount: '$50.00', payableAmount: '$250.00' },
+    { id: 3, date: '2023-10-03', paymentType: 'Bank Transfer', paidAmount: '$150.00', dueAmount: '$0.00', payableAmount: '$150.00' },
+    { id: 4, date: '2023-10-04', paymentType: 'Cash', paidAmount: '$300.00', dueAmount: '$100.00', payableAmount: '$400.00' },
+    { id: 5, date: '2023-10-05', paymentType: 'Credit Card', paidAmount: '$250.00', dueAmount: '$0.00', payableAmount: '$250.00' },
 ];
 export const suppliers = [
     { id: 1, name: "Esther Howard", amount: "$30,00.00" },
@@ -325,31 +325,33 @@ export const expiredTh = [
 ];
 
 export const expiredData = [
-    { SQU: '#001', Product: 'Milk',image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D",
- ManufacturerDate: '2023-01-01', ExpiryDate: '2023-02-01' },
-    { SQU: '#002', Product: 'Bread',image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D", ManufacturerDate: '2023-01-05', ExpiryDate: '2023-01-15' },
-    { SQU: '#003', Product: 'Eggs',image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D", ManufacturerDate: '2023-01-10', ExpiryDate: '2023-01-20' },
-    { SQU: '#004', Product: 'Cheese',image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D", ManufacturerDate: '2023-01-15', ExpiryDate: '2023-02-15' },
-    { SQU: '#005', Product: 'Yogurt',image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D", ManufacturerDate: '2023-01-20', ExpiryDate: '2023-02-20' }
+    {
+        SQU: '#001', Product: 'Milk', image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D",
+        ManufacturerDate: '2023-01-01', ExpiryDate: '2023-02-01'
+    },
+    { SQU: '#002', Product: 'Bread', image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D", ManufacturerDate: '2023-01-05', ExpiryDate: '2023-01-15' },
+    { SQU: '#003', Product: 'Eggs', image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D", ManufacturerDate: '2023-01-10', ExpiryDate: '2023-01-20' },
+    { SQU: '#004', Product: 'Cheese', image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D", ManufacturerDate: '2023-01-15', ExpiryDate: '2023-02-15' },
+    { SQU: '#005', Product: 'Yogurt', image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D", ManufacturerDate: '2023-01-20', ExpiryDate: '2023-02-20' }
 ]
 
 export const lowStockTh = [
- "Warehouse",
- "Store",
- "Product Name",
- "Category",
- "SkU",
- "Qty",
- "qty Alert",
- ""
+    "Warehouse",
+    "Store",
+    "Product Name",
+    "Category",
+    "SkU",
+    "Qty",
+    "qty Alert",
+    ""
 ]
 
 export const lowstockData = [
-    { Warehouse: 'Warehouse A', Store: 'Store 1', ProductName: 'Laptop',image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D", Category: 'Electronics', SkU: 'LAP123', Qty: 5, qtyAlert: 10 },
-    { Warehouse: 'Warehouse B', Store: 'Store 2', ProductName: 'Smartphone',image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D", Category: 'Electronics', SkU: 'SMP456', Qty: 3, qtyAlert: 5 },
-    { Warehouse: 'Warehouse C', Store: 'Store 3', ProductName: 'Tablet',image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D", Category: 'Electronics', SkU: 'TAB789', Qty: 8, qtyAlert: 10 },
-    { Warehouse: 'Warehouse D', Store: 'Store 4', ProductName: 'Headphones',image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D", Category: 'Accessories', SkU: 'HPD012', Qty: 2, qtyAlert: 5 },
-    { Warehouse: 'Warehouse E', Store: 'Store 5', ProductName: 'Charger',image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D", Category: 'Accessories', SkU: 'CHR345', Qty: 1, qtyAlert: 3 }
+    { Warehouse: 'Warehouse A', Store: 'Store 1', ProductName: 'Laptop', image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D", Category: 'Electronics', SkU: 'LAP123', Qty: 5, qtyAlert: 10 },
+    { Warehouse: 'Warehouse B', Store: 'Store 2', ProductName: 'Smartphone', image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D", Category: 'Electronics', SkU: 'SMP456', Qty: 3, qtyAlert: 5 },
+    { Warehouse: 'Warehouse C', Store: 'Store 3', ProductName: 'Tablet', image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D", Category: 'Electronics', SkU: 'TAB789', Qty: 8, qtyAlert: 10 },
+    { Warehouse: 'Warehouse D', Store: 'Store 4', ProductName: 'Headphones', image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D", Category: 'Accessories', SkU: 'HPD012', Qty: 2, qtyAlert: 5 },
+    { Warehouse: 'Warehouse E', Store: 'Store 5', ProductName: 'Charger', image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D", Category: 'Accessories', SkU: 'CHR345', Qty: 1, qtyAlert: 3 }
 ];
 
 export const categoryTh = [
@@ -360,7 +362,7 @@ export const categoryTh = [
     ""
 ]
 
-export const sortOption =[
+export const sortOption = [
     "This Month",
     "This Year",
     "This Week",
@@ -374,3 +376,32 @@ export const categoryData = [
     { Category: 'Books', CategorySlug: 'books', CreatedOn: '2023-04-20', status: 'active' },
     { Category: 'Sports Equipment', CategorySlug: 'sports-equipment', CreatedOn: '2023-05-05', status: 'active' }
 ];
+
+
+export const PrintQrData = [
+    {
+        img: "https://cdn-icons-png.flaticon.com/512/892/892458.png", // sample image
+        product: "Nike Jordan",
+        sku: "PT002",
+        code: "HG3FK",
+        refNumber: "32RRR554",
+        // qty: 4,
+    },
+    {
+        img: "https://cdn-icons-png.flaticon.com/512/892/892458.png",
+        product: "Adidas Pro",
+        sku: "PT010",
+        code: "AD9ZP",
+        refNumber: "12XBB789",
+        // qty: 2,
+    },
+];
+
+
+export const QRCodeTd = [
+    "Product",
+    "SKU",
+    "Code",
+    "REference Number",
+    "Qty",
+]

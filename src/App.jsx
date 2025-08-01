@@ -27,7 +27,7 @@ const App = () => {
             <Route path="/expire" element={<ExpiredProduct />} />
             <Route path="/stocks" element={<LowStock />} />
             <Route path="/Category" element={<Category />} />
-            <Route path="/Qu" element={<PrintQR />} />
+            <Route path="/QR" element={<PrintQR />} />
           </Routes>
         </div>
       </div>

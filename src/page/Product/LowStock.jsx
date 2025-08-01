@@ -2,9 +2,7 @@ import React, { useState } from 'react'
 import { lowstockData, lowStockTh } from '../../option';
 import SearchInput from '../../components/Form/SearchField';
 import Table from '../../components/Table/TableHead';
-import TableRow from '../../components/Table/TableBody';
 import ClassSelect from '../../components/Form/SelectField';
-import LowStockTable from '../../components/table/LowStockTable';
 import CommonTableRow from '../../components/table/CommonTableRow';
 
 function LowStock() {

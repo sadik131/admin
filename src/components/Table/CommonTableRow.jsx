@@ -1,4 +1,3 @@
-// CommonTableRow.jsx
 import { FaEdit, FaEye } from "react-icons/fa";
 import { MdDelete } from "react-icons/md";
 import { useNavigate } from "react-router-dom";

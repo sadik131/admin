@@ -51,7 +51,7 @@ const ClassSelect = ({ type, value, option, padding = "px-4 py-3" ,placeholder})
   };
 
   return (
-    <div className="relative w-full px-4 mb-6" ref={wrapperRef}>
+    <div className="relative px-4 mb-6" ref={wrapperRef}>
       {type && <label className="block mb-2 text-base font-normal text-secondary">{type}</label>}
 
       <div

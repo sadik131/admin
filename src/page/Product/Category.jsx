@@ -40,7 +40,9 @@ function Category() {
                                 onChange={(e) => setSearchExam(e.target.value)}
                             />
                         </div>
-                        <ClassSelect placeholder="Please select status" option={[...new Set(categoryData.map(data => data.status))]} />
+                        <div>
+                            <ClassSelect placeholder="status" padding='py-2 px-4 w-fit ' option={[...new Set(categoryData.map(data => data.status))]} />
+                        </div>
 
                     </div>
 
