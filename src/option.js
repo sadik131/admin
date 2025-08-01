@@ -321,15 +321,16 @@ export const expiredTh = [
     "Product",
     "Manufacturer Date",
     "Expiry Date",
-    "Action"
+    ""
 ];
 
 export const expiredData = [
-    { SQU: '#001', Product: 'Milk', ManufacturerDate: '2023-01-01', ExpiryDate: '2023-02-01' },
-    { SQU: '#002', Product: 'Bread', ManufacturerDate: '2023-01-05', ExpiryDate: '2023-01-15' },
-    { SQU: '#003', Product: 'Eggs', ManufacturerDate: '2023-01-10', ExpiryDate: '2023-01-20' },
-    { SQU: '#004', Product: 'Cheese', ManufacturerDate: '2023-01-15', ExpiryDate: '2023-02-15' },
-    { SQU: '#005', Product: 'Yogurt', ManufacturerDate: '2023-01-20', ExpiryDate: '2023-02-20' }
+    { SQU: '#001', Product: 'Milk',image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D",
+ ManufacturerDate: '2023-01-01', ExpiryDate: '2023-02-01' },
+    { SQU: '#002', Product: 'Bread',image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D", ManufacturerDate: '2023-01-05', ExpiryDate: '2023-01-15' },
+    { SQU: '#003', Product: 'Eggs',image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D", ManufacturerDate: '2023-01-10', ExpiryDate: '2023-01-20' },
+    { SQU: '#004', Product: 'Cheese',image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D", ManufacturerDate: '2023-01-15', ExpiryDate: '2023-02-15' },
+    { SQU: '#005', Product: 'Yogurt',image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D", ManufacturerDate: '2023-01-20', ExpiryDate: '2023-02-20' }
 ]
 
 export const lowStockTh = [
@@ -340,15 +341,15 @@ export const lowStockTh = [
  "SkU",
  "Qty",
  "qty Alert",
- "Action"
+ ""
 ]
 
 export const lowstockData = [
-    { Warehouse: 'Warehouse A', Store: 'Store 1', ProductName: 'Laptop', Category: 'Electronics', SkU: 'LAP123', Qty: 5, qtyAlert: 10 ,productImg: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D",},
-    { Warehouse: 'Warehouse B', Store: 'Store 2', ProductName: 'Smartphone', Category: 'Electronics', SkU: 'SMP456', Qty: 3, qtyAlert: 5 },
-    { Warehouse: 'Warehouse C', Store: 'Store 3', ProductName: 'Tablet', Category: 'Electronics', SkU: 'TAB789', Qty: 8, qtyAlert: 10 },
-    { Warehouse: 'Warehouse D', Store: 'Store 4', ProductName: 'Headphones', Category: 'Accessories', SkU: 'HPD012', Qty: 2, qtyAlert: 5 },
-    { Warehouse: 'Warehouse E', Store: 'Store 5', ProductName: 'Charger', Category: 'Accessories', SkU: 'CHR345', Qty: 1, qtyAlert: 3 }
+    { Warehouse: 'Warehouse A', Store: 'Store 1', ProductName: 'Laptop',image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D", Category: 'Electronics', SkU: 'LAP123', Qty: 5, qtyAlert: 10 },
+    { Warehouse: 'Warehouse B', Store: 'Store 2', ProductName: 'Smartphone',image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D", Category: 'Electronics', SkU: 'SMP456', Qty: 3, qtyAlert: 5 },
+    { Warehouse: 'Warehouse C', Store: 'Store 3', ProductName: 'Tablet',image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D", Category: 'Electronics', SkU: 'TAB789', Qty: 8, qtyAlert: 10 },
+    { Warehouse: 'Warehouse D', Store: 'Store 4', ProductName: 'Headphones',image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D", Category: 'Accessories', SkU: 'HPD012', Qty: 2, qtyAlert: 5 },
+    { Warehouse: 'Warehouse E', Store: 'Store 5', ProductName: 'Charger',image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D", Category: 'Accessories', SkU: 'CHR345', Qty: 1, qtyAlert: 3 }
 ];
 
 export const categoryTh = [
@@ -356,7 +357,14 @@ export const categoryTh = [
     "Category slug",
     "Created On",
     "Status",
-    "Action"
+    ""
+]
+
+export const sortOption =[
+    "This Month",
+    "This Year",
+    "This Week",
+    "Last Month",
 ]
 
 export const categoryData = [

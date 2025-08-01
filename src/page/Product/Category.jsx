@@ -3,6 +3,7 @@ import { categoryData, categoryTh, lowstockData, lowStockTh } from '../../option
 import SearchInput from '../../components/Form/SearchField';
 import Table from '../../components/Table/TableHead';
 import TableRow from '../../components/Table/TableBody';
+import ClassSelect from '../../components/Form/SelectField';
 
 function Category() {
 
@@ -25,34 +26,39 @@ function Category() {
     };
 
     return (
-        <div className={`max-w-5xl h-screen mx-auto p-6 shadow-md rounded-lg bg-white gap-5 font-roboto`}>
-            <h1 className="text-2xl font-bold text-center text-gray-800 mb-6">Low Stocks</h1>
+        <>
+            <div className="px-6 pt-6 font-roboto bg-bgColor">
+                <h1 className="text-xl font-semibold mb-4">Category</h1>
+                <div className={` mx-auto p-6 shadow-md rounded-lg bg-white gap-5 font-roboto`}>
+                    <h1 className="text-2xl font-bold text-gray-800 mb-6">Category</h1>
 
-            <div className="flex justify-between gap-4 mb-6">
-                <div className='w-1/4'>
-                    <SearchInput
-                        placeholder="Search"
-                        value={searchExam}
-                        onChange={(e) => setSearchExam(e.target.value)}
-                    />
+                    <div className="flex justify-between gap-4 mb-6">
+                        <div className='w-1/4'>
+                            <SearchInput
+                                placeholder="Search"
+                                value={searchExam}
+                                onChange={(e) => setSearchExam(e.target.value)}
+                            />
+                        </div>
+                        <ClassSelect placeholder="Please select status" option={[...new Set(categoryData.map(data => data.status))]} />
+
+                    </div>
+
+                    <Table headers={categoryTh}>
+                        {filteredData.map((item, index) => (
+                            <TableRow
+                                view={false}
+                                key={index}
+                                data={item}
+                                index={index}
+                                statusColors={statusColors}
+                            />
+                        ))}
+                    </Table>
+
                 </div>
-                {/* <ClassSelect type={"Category Type  *"} placeholder="Please select Category" option={category} /> */}
-
             </div>
-
-            <Table headers={categoryTh}>
-                {filteredData.map((item, index) => (
-                    <TableRow
-                        view={false}
-                        key={index}
-                        data={item}
-                        index={index}
-                        statusColors={statusColors}
-                    />
-                ))}
-            </Table>
-
-        </div>
+        </>
     )
 }
 
