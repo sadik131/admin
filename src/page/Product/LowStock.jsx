@@ -27,18 +27,18 @@ function LowStock() {
                 <div className={`mx-auto p-6 shadow-md rounded-lg bg-white gap-5 font-roboto`}>
                     <h1 className="text-2xl font-bold text-gray-800 mb-6">Low Stocks</h1>
 
-                    <div className="flex justify-between gap-4 mb-6">
-                        <div className='w-1/4'>
+                    <div className="flex flex-col lg:flex-row justify-between gap-4 mb-6">
+                        <div className='w-full lg:w-1/4'>
                             <SearchInput
                                 placeholder="Search"
                                 value={searchExam}
                                 onChange={(e) => setSearchExam(e.target.value)}
                             />
                         </div>
-                        <div className='flex'>
-                            <ClassSelect placeholder="Warehouse" option={[...new Set(lowstockData.map(data => data.Warehouse))]} />
-                            <ClassSelect placeholder="Store" option={[...new Set(lowstockData.map(data => data.Store))]} />
-                            <ClassSelect placeholder="Category" option={[...new Set(lowstockData.map(data => data.Category))]} />
+                        <div className='flex flex-col lg:flex-row'>
+                            <ClassSelect padding='px-4 py-3' placeholder="Warehouse" option={[...new Set(lowstockData.map(data => data.Warehouse))]} />
+                            <ClassSelect padding='px-4 py-3' placeholder="Store" option={[...new Set(lowstockData.map(data => data.Store))]} />
+                            <ClassSelect padding='px-4 py-3' placeholder="Category" option={[...new Set(lowstockData.map(data => data.Category))]} />
                         </div>
 
                     </div>

@@ -23,7 +23,7 @@ const QRCodeGenerator = () => {
     return (
         <>
             <div className="mx-auto py-6 bg-white border-b border-[#919eab4d]">
-                <div className="flex gap-5">
+                <div className="flex flex-col lg:flex-row gap-5">
                     <div className="mb-4 w-1/2">
                         <label className="block mb-2 text-base font-normal text-secondary">
                             Paper Size *
@@ -51,7 +51,7 @@ const QRCodeGenerator = () => {
                 </div>
             </div>
 
-            <div className="flex justify-end gap-5 mt-6 ">
+            <div className="flex justify-end flex-col lg:flex-row gap-5 mt-6 ">
                 <button
                     className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
                     onClick={handleGenerateQR}

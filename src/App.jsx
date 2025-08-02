@@ -1,9 +1,8 @@
 import { Route, Routes } from 'react-router-dom';
 import AddProduct from './page/Product/AddProduct.jsx';
-import AllProduct from './page/Product/AllProduct.jsx';
+import AllProduct from './page/product/AllProduct.jsx';
 import Details from './page/Product/ProductDetails.jsx';
 import UpdateProduct from './page/Product/UpdateProduct.jsx';
-import Button from './components/ui/SkuInput.jsx';
 import DashBoard from './page/dashboard/Dashboard.jsx';
 import Sidebar from './components/layout/Sidebar.jsx';
 import ExpiredProduct from './page/product/ExpiredProduct.jsx';
@@ -14,7 +13,7 @@ import PrintQR from './page/product/PrintQR.jsx';
 const App = () => {
   return (
     <>
-      <div className='flex flex-row font-roboto'>
+      <div className='flex flex-col md:flex-row font-roboto'>
         <Sidebar/>
         {/* Main content area */}
         <div className="w-full">

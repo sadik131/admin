@@ -20,8 +20,9 @@ const TableRow = ({ data, index, statusColors = {}, view }) => {
 
   const getCellStyle = (key, value) => {
     if (key === "status") {
-       return `font-medium rounded-md ${statusColors[value] || "bg-gray-100 text-gray-800"}`;
-
+      return `font-medium rounded-md ${
+        statusColors[value] || "bg-gray-100 text-gray-800"
+      }`;
     }
     return "text-secondary";
   };
@@ -29,7 +30,10 @@ const TableRow = ({ data, index, statusColors = {}, view }) => {
   return (
     <tr className={index % 2 === 0 ? "bg-white" : "bg-gray-50"}>
       {Object.entries(data).map(([key, value]) => (
-        <td key={key} className="px-6 py-4">
+        <td
+          key={key}
+          className="whitespace-nowrap min-w-[100px] px-4 py-3 text-sm"
+        >
           {key === "image" ? (
             <img
               src={value}
@@ -38,10 +42,7 @@ const TableRow = ({ data, index, statusColors = {}, view }) => {
             />
           ) : (
             <span
-              className={`whitespace-nowrap text-sm px-2 py-1 rounded-full ${getCellStyle(
-                key,
-                value
-              )}`}
+              className={`px-2 py-1 rounded-full ${getCellStyle(key, value)}`}
             >
               {value}
             </span>
@@ -50,7 +51,7 @@ const TableRow = ({ data, index, statusColors = {}, view }) => {
       ))}
 
       {/* Action Buttons */}
-      <td className="text-center align-middle px-4 py-2 text-primary">
+      <td className="whitespace-nowrap min-w-[120px] px-4 py-3 text-center">
         <div className="flex items-center justify-center gap-4">
           <FaEdit
             onClick={handleEdit}
