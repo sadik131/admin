@@ -406,3 +406,101 @@ export const QRCodeTd = [
     "Qty",
     ""
 ]
+
+
+export const userData = [
+    {
+        "id": 1,
+        "name": "Sajib Islam",
+        "role": "Inventory Admin",
+        "department": "Medicine",
+        "status": "active",
+        "avatar": "https://randomuser.me/api/portraits/women/32.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Tanjina Akter",
+        "role": "Store Manager",
+        "department": "Surgery",
+        "status": "pending",
+        "avatar": "https://randomuser.me/api/portraits/men/45.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Jubayer Hossain",
+        "role": "Procurement Officer",
+        "department": "Pediatrics",
+        "status": "active",
+        "avatar": "https://randomuser.me/api/portraits/women/63.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Fatema Akhtar",
+        "role": "IT Support",
+        "department": "Radiology",
+        "status": "pending",
+        "avatar": "https://randomuser.me/api/portraits/men/22.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Ahmed Rahman",
+        "role": "Department Head",
+        "department": "Cardiology",
+        "status": "active",
+        "avatar": "https://randomuser.me/api/portraits/women/88.jpg"
+    }
+]
+
+export const topSupplierTh = [
+    "SL",
+    "Name",
+    "Amount"
+]
+
+export const topSupplierData = [
+  {
+    sl: 1,
+    name: "Akij Furniture Ltd.",
+    amount: "৳ 1,50,000",
+    location: "Dhaka, Bangladesh",
+    img: "https://i.pravatar.cc/100?img=15",
+    growth: "+12% vs last month",
+    growthColor: "text-green-600"
+  },
+  {
+    sl: 2,
+    name: "Singer Bangladesh",
+    amount: "৳ 1,10,000",
+    location: "Chattogram, Bangladesh",
+    img: "https://i.pravatar.cc/100?img=21",
+    growth: "+9% vs last month",
+    growthColor: "text-green-600"
+  },
+  {
+    sl: 3,
+    name: "RFL Plastics",
+    amount: "৳ 95,000",
+    location: "Narsingdi, Bangladesh",
+    img: "https://i.pravatar.cc/100?img=31",
+    growth: "+5% vs last month",
+    growthColor: "text-green-600"
+  },
+  {
+    sl: 4,
+    name: "Walton Electronics",
+    amount: "৳ 85,000",
+    location: "Gazipur, Bangladesh",
+    img: "https://i.pravatar.cc/100?img=41",
+    growth: "-3% vs last month",
+    growthColor: "text-red-600"
+  },
+  {
+    sl: 5,
+    name: "Bashundhara Paper",
+    amount: "৳ 60,000",
+    location: "Dhaka, Bangladesh",
+    img: "https://i.pravatar.cc/100?img=51",
+    growth: "+2% vs last month",
+    growthColor: "text-green-600"
+  }
+];

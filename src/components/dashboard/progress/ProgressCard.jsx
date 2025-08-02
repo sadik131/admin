@@ -35,22 +35,6 @@ function ProgressCard() {
             iconBg: "bg-teal-200",
             icon: <FaPlusCircle className='text-2xl' />
         },
-        {
-            title: "Users",
-            amount: "48",
-            bg: "bg-gradient-to-r from-[#FFEEEE] to-[#FFE5E5]",
-            iconColor: "text-blue-600",
-            iconBg: "bg-red-200",
-            icon: <FaUsers className='text-2xl' />
-        },
-        {
-            title: "Top Supplier",
-            amount: "20",
-            bg: "bg-gradient-to-r from-[#F0FFEE] to-[#E5FFDC]",
-            iconColor: "text-blue-600",
-            iconBg: "bg-green-200",
-            icon: <FaTruck className='text-2xl' />
-        }
     ];
 
     return (

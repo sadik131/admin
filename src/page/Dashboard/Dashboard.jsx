@@ -1,7 +1,10 @@
 import ProgressCard from "../../components/dashboard/progress/ProgressCard";
 import PaiChartCompo from "../../components/Dashboard/Charts/PaiChart";
-import AllProduct from "../product/AllProduct";
+import AllProduct from "../Product/AllProduct";
 import LineChartCompo from "../../components/dashboard/charts/LineChart";
+import TopUser from "./TopUser";
+import { userData } from "../../option";
+import TopSupplier from "./TopSupplier";
 
 export default function DashBoard() {
 
@@ -13,6 +16,10 @@ export default function DashBoard() {
                 <div className="flex flex-col lg:flex-row gap-4">
                     <PaiChartCompo />
                     <LineChartCompo />
+                </div>
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
+                    <TopUser users={userData} />
+                    <TopSupplier />
                 </div>
                 <AllProduct title="Recent Purchases" width="w-full"/>
             </div>

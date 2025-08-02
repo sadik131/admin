@@ -2,7 +2,7 @@ import { FaEdit, FaEye } from "react-icons/fa";
 import { MdDelete } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
 
-const TableRow = ({ data, index, statusColors = {}, view }) => {
+const TableRow = ({ data, index, statusColors = {}, view ,action}) => {
   const navigate = useNavigate();
 
   const handleEdit = () => {
@@ -51,7 +51,7 @@ const TableRow = ({ data, index, statusColors = {}, view }) => {
       ))}
 
       {/* Action Buttons */}
-      <td className="whitespace-nowrap min-w-[120px] px-4 py-3 text-center">
+      {action &&<td className="whitespace-nowrap min-w-[120px] px-4 py-3 text-center">
         <div className="flex items-center justify-center gap-4">
           <FaEdit
             onClick={handleEdit}
@@ -68,7 +68,7 @@ const TableRow = ({ data, index, statusColors = {}, view }) => {
             className="text-base cursor-pointer hover:text-red-500 transition duration-200"
           />
         </div>
-      </td>
+      </td>}
     </tr>
   );
 };

@@ -1,6 +1,6 @@
-const Table = ({ headers, children }) => {
+const Table = ({ headers, children ,className}) => {
   return (
-    <div className="overflow-x-auto w-full">
+    <div className={`overflow-x-auto w-full ${className}`}>
       <table className="w-full min-w-max divide-y divide-gray-200 text-sm text-left">
         <thead className="bg-gray-100">
           <tr>
