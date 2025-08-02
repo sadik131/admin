@@ -25,7 +25,7 @@ function AllProduct({ title = "All Product", width = "max-w-5xl" }) {
     <div className={`max-w-5xl mx-auto p-6 shadow-md rounded-lg bg-white gap-5 font-roboto`}>
       <h1 className="text-2xl font-bold text-gray-800 text-center mb-6">{title}</h1>
 
-      <div className="flex gap-4 mb-6">
+      <div className="block md:flex gap-4 mb-6">
         <SearchInput
           placeholder="Search by Name..."
           value={searchExam}

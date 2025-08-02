@@ -34,7 +34,7 @@ function ProgressCard() {
     ];
 
     return (
-        <div className="p-5 grid grid-cols-4 gap-5 bg-white rounded-lg shadow-md">
+        <div className="p-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 bg-white rounded-lg shadow-md">
             {data.map((item, index) => (
                 <div key={index} className={`last:mb-0 flex justify-between ${item.bg} w-full py-4 px-5 rounded-lg`}>
                     <div>

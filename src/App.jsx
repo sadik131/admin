@@ -15,7 +15,7 @@ const App = () => {
   return (
     <>
       <div className='flex flex-row font-roboto'>
-        <Sidebar />
+        <Sidebar/>
         {/* Main content area */}
         <div className="w-full">
           <Routes>

@@ -18,7 +18,7 @@ const DatePicke = ({ lable, value }) => {
 
 
   return (
-    <div className="w-full mb-4 px-4">
+    <div className="w-full mb-4 md:px-4">
       <label className="block mb-2 text-base font-normal text-secondary">
         {lable}
       </label>

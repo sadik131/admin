@@ -2,7 +2,7 @@ import React from 'react'
 
 function Input({ lable, type, placeholder, bgColor, value }) {
     return (
-        <div className=' w-full px-4 mb-6'>
+        <div className=' w-full md:px-4 md:mb-6'>
             <label className="block mb-2 text-base font-normal text-secondary">{lable}</label>
             <input
                 value={value}

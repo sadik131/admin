@@ -3,7 +3,7 @@ import { FaCaretUp } from "react-icons/fa";
 
 
 
-const ClassSelect = ({ type, value, option, padding = "px-4 py-3" ,placeholder}) => {
+const ClassSelect = ({ type, value, option, padding = "md:px-4 md:py-3" ,placeholder}) => {
   const [selectedValue, setSelectedValue] = useState(value || '');
   const [searchValue, setSearchValue] = useState('');
   const [filteredOptions, setFilteredOptions] = useState(option);

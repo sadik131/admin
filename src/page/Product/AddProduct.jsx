@@ -45,7 +45,7 @@ const ProductForm = () => {
       {/* Basic Info */}
       <div className="bg-white rounded-lg p-6 mb-8">
         <h3 className="text-lg pl-4 font-semibold text-textColor mb-4">Product Information</h3>
-        <div className="grid grid-cols-1 md:grid-cols-3 ">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           <Input
             value={Product.productName}
             bgColor={"bg-[#f0f1f3]"}
@@ -73,7 +73,7 @@ const ProductForm = () => {
       {/* Stock Info */}
       <div className="bg-white rounded-lg p-6 mb-8">
         <h3 className="text-lg pl-4 font-semibold text-textColor mb-4">Stock Info</h3>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           <Input
             bgColor={"bg-[#f0f1f3]"}
             lable="Quantity *"
@@ -98,7 +98,7 @@ const ProductForm = () => {
       {/* Purchase Info */}
       <div className="bg-white rounded-lg p-6 mb-8">
         <h3 className="text-lg pl-4 font-semibold text-textColor mb-4">Purchase Info</h3>
-        <div className="grid grid-cols-1 md:grid-cols-3">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           <DatePicke
             value={Product.publishDate}
             lable={"Purchase Date"} />
@@ -133,7 +133,7 @@ const ProductForm = () => {
       {/* Warranty Info */}
       <div className="bg-white rounded-lg p-6 mb-8">
         <h3 className="text-lg pl-4 font-semibold text-textColor mb-4">Warranty Info</h3>
-        <div className="grid grid-cols-1 md:grid-cols-3">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           <Input
             bgColor={"bg-[#f0f1f3]"}
             lable="warranty period"
@@ -166,7 +166,7 @@ const ProductForm = () => {
         <h3 className="text-lg pl-4 font-semibold text-textColor mb-4">
           Lifecycle / Usage Info
         </h3>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           <Input
             bgColor={"bg-[#f0f1f3]"}
             value={Product.assigned_to}
@@ -180,15 +180,15 @@ const ProductForm = () => {
 
       {/* Other Info */}
       <div className="bg-white rounded-lg p-6 mb-8">
-        <h3 className="text-lg pl-4 font-semibold text-textColor mb-4">Other Info</h3>
-        <div className="flex">
-          <div className=' w-full px-4 mb-6'>
+        <h3 className="text-lg md:pl-4 font-semibold text-textColor mb-4">Other Info</h3>
+        <div className="flex flex-col lg:flex-row">
+          <div className=' w-full md:px-4 mb-6'>
             <label className="block mb-2 text-base font-normal text-secondary">message</label>
             <textarea name="" value={Product.notes} className={`bg-[#f0f1f3] h-40 w-full px-4 py-3 rounded-md focus:outline-none`}
               id=""></textarea>
           </div>
 
-          <div className="mt-4 pl-4">
+          <div className="mt-4 md:pl-4">
             <label className="block mb-2 font-medium">Upload Product Image</label>
             <input type="file" />
           </div>
