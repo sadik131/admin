@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { lowstockData, lowStockTh } from '../../option';
 import SearchInput from '../../components/Form/SearchField';
-import Table from '../../components/Table/TableHead';
+import Table from '../../components/table/TableHead';
 import ClassSelect from '../../components/Form/SelectField';
 import CommonTableRow from '../../components/table/CommonTableRow';
 
