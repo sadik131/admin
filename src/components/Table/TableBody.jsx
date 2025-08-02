@@ -2,7 +2,7 @@ import { FaEdit, FaEye } from "react-icons/fa";
 import { MdDelete } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
 
-const TableRow = ({ data, index, statusColors = {}, view ,action}) => {
+const TableRow = ({ data, index, statusColors = {}, view ,action=true}) => {
   const navigate = useNavigate();
 
   const handleEdit = () => {

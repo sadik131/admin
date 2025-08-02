@@ -11,7 +11,7 @@ function AllProduct({ title = "All Product" }) {
 
   const filteredData = productData.filter(item => {
     return (
-      item.productName.toLowerCase().includes(searchExam.toLowerCase()) &&
+      item.name.toLowerCase().includes(searchExam.toLowerCase()) &&
       item.brand.toLowerCase().includes(searchSubject.toLowerCase()) &&
       item.brand.includes(searchDate)
     );

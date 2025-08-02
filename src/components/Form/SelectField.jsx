@@ -59,8 +59,8 @@ const ClassSelect = ({ type, value, option, padding = "md:px-4 md:py-3" ,placeho
         onClick={handleDropdownClick}
       >
         {placeholder || 'Please Select Class *'}
-        <span className={`transition-transform duration-200 ${dropdownVisible ? 'rotate-180' : 'rotate-0'}`}>
-          <FaCaretUp className='' /></span>
+        <span className={`transition-transform duration-200 ${dropdownVisible ? 'rotate-0' : 'rotate-180'}`}>
+          <FaCaretUp className='ml-1' /></span>
       </div>
 
       {dropdownVisible && (

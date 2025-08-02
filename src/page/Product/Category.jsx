@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { categoryData, categoryTh, lowstockData, lowStockTh } from '../../option';
 import SearchInput from '../../components/Form/SearchField';
-import Table from '../../components/Table/TableHead';
+import Table from '../../components/table/TableHead';
 import TableRow from '../../components/Table/TableBody';
 import ClassSelect from '../../components/Form/SelectField';
 
@@ -29,7 +29,7 @@ function Category() {
         <>
             <div className="px-6 pt-6 font-roboto bg-bgColor">
                 <h1 className="text-xl font-semibold mb-4">Category</h1>
-                <div className={` mx-auto p-6 shadow-md rounded-lg bg-white gap-5 font-roboto`}>
+                <div className={`h-full mx-auto p-6 shadow-md rounded-lg bg-white gap-5 font-roboto`}>
                     <h1 className="text-2xl font-bold text-gray-800 mb-6">Category</h1>
 
                     <div className="flex justify-between gap-4 mb-6">
