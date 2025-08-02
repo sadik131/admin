@@ -1,6 +1,7 @@
 import { FaEdit, FaEye } from "react-icons/fa";
 import { MdDelete } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
+import Counter from "../layout/Counter";
 
 const CommonTableRow = ({ data, index, fields, imageField, nameField, statusColors = {}, view }) => {
   const navigate = useNavigate();
@@ -26,6 +27,8 @@ const CommonTableRow = ({ data, index, fields, imageField, nameField, statusColo
               <img src={data[imageField]} alt="" className="h-8 w-8 rounded-lg" />
               {data[nameField]}
             </div>
+          ) : field === 'qty' ? (
+            <Counter />
           ) : (
             data[field]
           )}

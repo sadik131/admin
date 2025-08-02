@@ -329,10 +329,10 @@ export const expiredData = [
         SQU: '#001', Product: 'Milk', image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D",
         ManufacturerDate: '2023-01-01', ExpiryDate: '2023-02-01'
     },
-    { SQU: '#002', Product: 'Bread', image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D", ManufacturerDate: '2023-01-05', ExpiryDate: '2023-01-15' },
-    { SQU: '#003', Product: 'Eggs', image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D", ManufacturerDate: '2023-01-10', ExpiryDate: '2023-01-20' },
-    { SQU: '#004', Product: 'Cheese', image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D", ManufacturerDate: '2023-01-15', ExpiryDate: '2023-02-15' },
-    { SQU: '#005', Product: 'Yogurt', image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D", ManufacturerDate: '2023-01-20', ExpiryDate: '2023-02-20' }
+    { SQU: '#002', Product: 'Bread', image: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D", ManufacturerDate: '2023-01-05', ExpiryDate: '2023-01-15' },
+    { SQU: '#003', Product: 'Eggs', image: "https://plus.unsplash.com/premium_photo-1664392147011-2a720f214e01?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D", ManufacturerDate: '2023-01-10', ExpiryDate: '2023-01-20' },
+    { SQU: '#004', Product: 'Cheese', image: "https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D", ManufacturerDate: '2023-01-15', ExpiryDate: '2023-02-15' },
+    { SQU: '#005', Product: 'Yogurt', image: "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHByb2R1Y3R8ZW58MHx8MHx8fDA%3D", ManufacturerDate: '2023-01-20', ExpiryDate: '2023-02-20' }
 ]
 
 export const lowStockTh = [
@@ -347,11 +347,11 @@ export const lowStockTh = [
 ]
 
 export const lowstockData = [
-    { Warehouse: 'Warehouse A', Store: 'Store 1', ProductName: 'Laptop', image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D", Category: 'Electronics', SkU: 'LAP123', Qty: 5, qtyAlert: 10 },
+    { Warehouse: 'Warehouse A', Store: 'Store 1', ProductName: 'Laptop', image: "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHByb2R1Y3R8ZW58MHx8MHx8fDA%3D", Category: 'Electronics', SkU: 'LAP123', Qty: 5, qtyAlert: 10 },
     { Warehouse: 'Warehouse B', Store: 'Store 2', ProductName: 'Smartphone', image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D", Category: 'Electronics', SkU: 'SMP456', Qty: 3, qtyAlert: 5 },
-    { Warehouse: 'Warehouse C', Store: 'Store 3', ProductName: 'Tablet', image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D", Category: 'Electronics', SkU: 'TAB789', Qty: 8, qtyAlert: 10 },
+    { Warehouse: 'Warehouse C', Store: 'Store 3', ProductName: 'Tablet', image: "https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D", Category: 'Electronics', SkU: 'TAB789', Qty: 8, qtyAlert: 10 },
     { Warehouse: 'Warehouse D', Store: 'Store 4', ProductName: 'Headphones', image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D", Category: 'Accessories', SkU: 'HPD012', Qty: 2, qtyAlert: 5 },
-    { Warehouse: 'Warehouse E', Store: 'Store 5', ProductName: 'Charger', image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D", Category: 'Accessories', SkU: 'CHR345', Qty: 1, qtyAlert: 3 }
+    { Warehouse: 'Warehouse E', Store: 'Store 5', ProductName: 'Charger', image: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D", Category: 'Accessories', SkU: 'CHR345', Qty: 1, qtyAlert: 3 }
 ];
 
 export const categoryTh = [
@@ -380,20 +380,20 @@ export const categoryData = [
 
 export const PrintQrData = [
     {
-        img: "https://cdn-icons-png.flaticon.com/512/892/892458.png", // sample image
-        product: "Nike Jordan",
+        image: "https://plus.unsplash.com/premium_photo-1664392147011-2a720f214e01?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D",
+        ProductName: "Nike Jordan",
         sku: "PT002",
         code: "HG3FK",
         refNumber: "32RRR554",
-        // qty: 4,
+        qty: 4,
     },
     {
-        img: "https://cdn-icons-png.flaticon.com/512/892/892458.png",
-        product: "Adidas Pro",
+        image: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D",
+        ProductName: "Adidas Pro",
         sku: "PT010",
         code: "AD9ZP",
         refNumber: "12XBB789",
-        // qty: 2,
+        qty: 2,
     },
 ];
 
@@ -404,4 +404,5 @@ export const QRCodeTd = [
     "Code",
     "REference Number",
     "Qty",
+    ""
 ]

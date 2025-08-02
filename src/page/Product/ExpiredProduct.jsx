@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import { expiredData, expiredTh, sortOption } from '../../option';
 import SearchInput from '../../components/Form/SearchField';
-import Table from '../../components/Table/TableHead';
 import ClassSelect from '../../components/Form/SelectField';
-import CommonTableRow from '../../components/Table/CommonTableRow';
+import CommonTableRow from '../../components/table/CommonTableRow';
+import Table from '../../components/table/TableHead';
 
 function ExpiredProduct() {
 
