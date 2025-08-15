@@ -1,3 +1,4 @@
+import Avatar from "../../components/ui/Avatar";
 
 function TopUser({ users }) {
 
@@ -19,11 +20,11 @@ function TopUser({ users }) {
           <div key={user.id} className="flex justify-between items-center">
             <div className="flex gap-2">
               <div className="w-9 h-9 rounded-full">
-                <img
-                  src={user.avatar}
-                  alt={user.name}
-                  className="h-full w-full rounded-full object-cover"
-                />
+                <Avatar 
+                name={user.name} 
+                type="user" 
+                size="md"
+              />
               </div>
               <div>
                 <h4 className="text-textColor">{user.name}</h4>

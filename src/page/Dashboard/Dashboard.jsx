@@ -1,10 +1,10 @@
-import ProgressCard from "../../components/dashboard/progress/ProgressCard";
-import PaiChartCompo from "../../components/Dashboard/Charts/PaiChart";
-import AllProduct from "../Product/AllProduct";
-import LineChartCompo from "../../components/dashboard/charts/LineChart";
-import TopUser from "./TopUser";
 import { userData } from "../../option";
 import TopSupplier from "./TopSupplier";
+import AllProduct from "../product/AllProduct";
+import ProgressCard from "../../components/dashboard/progress/ProgressCard";
+import PaiChartCompo from "../../components/Dashboard/Charts/PaiChart";
+import LineChartCompo from "../../components/dashboard/charts/LineChart";
+import TopUser from "./TopUser";
 
 export default function DashBoard() {
 

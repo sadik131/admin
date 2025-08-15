@@ -1,6 +1,7 @@
 import { FaEdit, FaEye } from "react-icons/fa";
 import { MdDelete } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
+import Avatar from "../ui/Avatar";
 
 const TableRow = ({ data, index, statusColors = {}, view ,action=true}) => {
   const navigate = useNavigate();
@@ -35,10 +36,10 @@ const TableRow = ({ data, index, statusColors = {}, view ,action=true}) => {
           className="whitespace-nowrap min-w-[100px] px-4 py-3 text-sm"
         >
           {key === "image" ? (
-            <img
-              src={value}
-              alt="product"
-              className="w-12 h-12 object-cover rounded-md"
+            <Avatar 
+              name={data.name || data.Product || 'Product'} 
+              category={data.category || 'Office Supplies'} 
+              size="lg"
             />
           ) : (
             <span

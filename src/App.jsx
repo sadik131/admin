@@ -16,7 +16,7 @@ const App = () => {
       <div className='flex flex-col md:flex-row font-roboto'>
         <Sidebar/>
         {/* Main content area */}
-        <div className="w-full">
+        <div className="flex-1 overflow-x-hidden">
           <Routes>
             <Route path="/" element={<DashBoard />} />
             <Route path="/add" element={<AddProduct />} />

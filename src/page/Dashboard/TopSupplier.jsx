@@ -1,5 +1,6 @@
 import TableRow from "../../components/Table/TableBody";
 import Table from "../../components/table/TableHead";
+import Avatar from "../../components/ui/Avatar";
 import {  topSupplierData, topSupplierTh } from "../../option";
 
 function TopSupplier() {
@@ -19,7 +20,11 @@ function TopSupplier() {
         {topSupplierData.map(data=>(
           <li class="px-4 py-3 flex items-center justify-between">
           <div class="flex items-center space-x-3">
-            <img class="w-10 h-10 rounded-full" src={data.img} alt="Supplier 1" />
+            <Avatar 
+                name={data.name} 
+                type="user" 
+                size="md"
+              />
             <div>
               <p class="text-sm font-medium text-gray-800">{data.name}</p>
               <p class="text-xs text-gray-500">{data.location}</p>

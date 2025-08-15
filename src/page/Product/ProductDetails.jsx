@@ -28,7 +28,7 @@ const ProductDetails = () => {
       "Aliquam erat volutpat. Curabiene natis massa sedde lacu stiquen sodale word moun taiery.Aliquam erat volutpaturabiene natis massa sedde sodale word moun taiery.",
     publishDate: "2025-07-28",
   };
-
+  
   return (
     <div className="mx-auto p-6 bg-white shadow-lg rounded-md font-roboto">
       <h2 className="text-2xl text-textColor font-bold mb-6 text-start">Product Details</h2>
@@ -38,7 +38,7 @@ const ProductDetails = () => {
         <div className="flex-shrink-0 ">
           <img
             src={product.image}
-            alt={product.productName}
+            alt={product.productName} 
             className="w-full lg:w-60 h-60 object-cover rounded-md shadow"
           />
           

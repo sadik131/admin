@@ -20,7 +20,7 @@ const LineChartCompo = () => {
         enabled: false
       },
       stroke: {
-        curve: 'straight',
+        curve: 'smooth',
         width: 2
       },
       grid: {

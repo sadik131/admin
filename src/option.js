@@ -165,6 +165,7 @@ export const productData = [
         "qr_code": "PROD-2023-002-QR",
         "specs": "i5, 8GB RAM, 256GB SSD"
     },
+    
     {
         "id": "PROD-2023-003",
         "image": "https://images.unsplash.com/photo-1560493676-04071c5f467b?ixlib=rb-1.2.1&auto=format",
@@ -186,6 +187,26 @@ export const productData = [
         "specs": "56-inch, 3-speed"
     },
     {
+        "id": "PROD-2023-002",
+        "image": "https://images.unsplash.com/photo-1593642632823-8f785ba67e45?ixlib=rb-1.2.1&auto=format",
+        "name": "Desktop Computer",
+        "category": "Electronics",
+        "brand": "Walton",
+        "model": "Primo H5",
+        "sku": "ELEC-DT-002",
+        "purchase_price": 35000,
+        "selling_price": 42000,
+        "quantity": 8,
+        "reorder_level": 2,
+        "supplier": "Star Tech",
+        "supplier_contact": "01987-654321",
+        "location": "IT Department",
+        "last_restock": "2023-10-20",
+        "warranty_expiry": "2024-10-20",
+        "qr_code": "PROD-2023-002-QR",
+        "specs": "i5, 8GB RAM, 256GB SSD"
+    },
+    {
         "id": "PROD-2023-004",
         "image": "https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?ixlib=rb-1.2.1&auto=format",
         "name": "Office Desk",
@@ -204,7 +225,47 @@ export const productData = [
         "warranty_expiry": "N/A",
         "qr_code": "PROD-2023-004-QR",
         "specs": "L-shaped, 160x120cm"
-    }
+    },
+    {
+        "id": "PROD-2023-002",
+        "image": "https://images.unsplash.com/photo-1593642632823-8f785ba67e45?ixlib=rb-1.2.1&auto=format",
+        "name": "Desktop Computer",
+        "category": "Electronics",
+        "brand": "Walton",
+        "model": "Primo H5",
+        "sku": "ELEC-DT-002",
+        "purchase_price": 35000,
+        "selling_price": 42000,
+        "quantity": 8,
+        "reorder_level": 2,
+        "supplier": "Star Tech",
+        "supplier_contact": "01987-654321",
+        "location": "IT Department",
+        "last_restock": "2023-10-20",
+        "warranty_expiry": "2024-10-20",
+        "qr_code": "PROD-2023-002-QR",
+        "specs": "i5, 8GB RAM, 256GB SSD"
+    },
+    {
+        "id": "PROD-2023-004",
+        "image": "https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?ixlib=rb-1.2.1&auto=format",
+        "name": "Office Desk",
+        "category": "Furniture",
+        "brand": "Partex",
+        "model": "OD-2023",
+        "sku": "FURN-DK-004",
+        "purchase_price": 8500,
+        "selling_price": 11000,
+        "quantity": 10,
+        "reorder_level": 2,
+        "supplier": "Akij Furniture",
+        "supplier_contact": "01666-789012",
+        "location": "Store Room-2",
+        "last_restock": "2023-10-15",
+        "warranty_expiry": "N/A",
+        "qr_code": "PROD-2023-004-QR",
+        "specs": "L-shaped, 160x120cm"
+    },
 ];
 
 export const tableHead = [

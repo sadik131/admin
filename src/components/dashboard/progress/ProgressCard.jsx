@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaShoppingCart, FaBoxes, FaExclamationTriangle, FaPlusCircle, FaUsers, FaTruck } from 'react-icons/fa';
+import { FaShoppingCart, FaBoxes, FaExclamationTriangle, FaPlusCircle, FaUsers, FaTruck, FaCalendarAlt, FaTags } from 'react-icons/fa';
 
 function ProgressCard() {
     const data = [
@@ -35,6 +35,22 @@ function ProgressCard() {
             iconBg: "bg-teal-200",
             icon: <FaPlusCircle className='text-2xl' />
         },
+         {
+            title: "Upcoming Expirations",
+            amount: "12",
+            bg: "bg-gradient-to-r from-[#FEF2F2] to-[#FEE2E2]",
+            iconColor: "text-red-600",
+            iconBg: "bg-red-200",
+            icon: <FaCalendarAlt className='text-2xl' />
+        },
+        {
+            title: "Total Categories",
+            amount: "12",
+            bg: "bg-gradient-to-r from-[#FEF3C7] to-[#FDE68A]",
+            iconColor: "text-yellow-600",
+            iconBg: "bg-yellow-200",
+            icon: <FaTags className='text-2xl' />
+        }
     ];
 
     return (
